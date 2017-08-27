@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+		 xmlns:xlink="http://www.w3.org/1999/xlink"
+		 width="453px" height="640px"
+		 viewBox="0 0 453 640" overflow="hidden">
+		 
+		 <rect
+		 	x="0"
+			y="0"
+			rx="2"
+			ry="2"
+			width="100%"
+			height="100%"
+			fill="#c9c9c9"
+			stroke="none" />
+			
+		<text
+			x="220"
+			y="370"
+			fill="#fff"
+			text-anchor="middle"
+			font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+			font-size="200px"
+			font-weight="lighter">
+			05
+		</text>
+			
+</svg>
+

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*==== CONTACT PAGE ==== コンタクトページのデザイン ====*/
+
+#CONTACT {
+	padding-top: 30px;
+}
+
+.Artboards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*== Mail Form == メールフォーム ==*/
+
+#Mail {
+	width: 275px;
+	height: auto;
+	margin: 2% auto 0;
+}
+
+#Mail text {
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+
+/*== Images == 画像ファイル ==*/
+
+.Post_left {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex: initial;
+}
+
+.Post_left img {
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/*== Smartphone's UI == スマートフォン向けUI ==*/
+
+@media screen and (max-width:600px) {
+
+#Mail {
+	width: 150px;
+	}
+
+.Post_left img {
+  max-width: 60%;
+}
+
+	}

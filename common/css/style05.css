@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684");
+
+@font-face{
+font-family:"Helvetica Neue Thin";
+src:url("../Fonts/1459684/6a90c865-49a8-4f20-99c7-73987067d9c9.eot?#iefix");
+src:url("../Fonts/1459684/6a90c865-49a8-4f20-99c7-73987067d9c9.eot?#iefix") format("eot"),
+url("../Fonts/1459684/8520ec8f-b7f6-485e-a3b7-811ab3da29b2.woff2") format("woff2"),
+url("../Fonts/1459684/cd6c33a1-279f-47db-8fa5-063d809888f8.woff") format("woff"),
+url("../Fonts/1459684/b204c5ce-e6ed-4dfd-bfdc-b45b26fcb7c8.ttf") format("truetype"),
+url("../Fonts/1459684/272a58f8-f0b6-4601-934c-b64afb2b3a56.svg#272a58f8-f0b6-4601-934c-b64afb2b3a56") format("svg");
+}
+
+/*==== ERROR DOCUMENT ==== エラードキュメント ====*/
+html, body {
+	height: 100%; /* コンテンツの高さが短いときに、フッターを画面下部に固定するために必要。*/
+}
+
+body * {
+	font-family: "Helvetica Neue Thin";
+	font-size: 100%;
+	font-weight: bold;
+	vertical-align: bottom;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	color: #9B9B9B;
+	margin: 0;
+	padding: 0;
+}
+
+#pageBody {
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 5%;
+	box-sizing: border-box;
+}
+
+.wrapper-content { /* コンテンツの高さが短いときに、フッターを画面下部に固定するために必要。*/
+	position: relative;
+	min-height: 100%;
+}
+
+#pageMain {
+	padding-bottom: 3em; /* windowの高さが短いときに本文とFooterがかぶってしまう問題を回避。 */
+}
+
+* a {
+		text-decoration: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection {
+	background: transparent;
+	color: #CCCCCC;
+	text-shadow: 2px 2px 2px #737373;
+}
+
+::selection {
+	background: transparent;
+	color: #CCCCCC;
+	text-shadow: 2px 2px 2px #737373;
+}
+
+/*== ERROR MESSAGE == エラーメッセージ ==*/
+
+.Error-message {
+		display: flex;
+		flex-flow: column wrap;
+		flex: initial;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+}
+
+.Number {
+	display: flex;
+	align-self: center;
+	font-size: 200px;
+	line-height: 1.03;
+}
+
+ .Message {
+	 display: flex;
+	 align-self: center;
+	 font-size: 75px;
+	 line-height: 1.08;
+ }
+ 
+ .String {
+ 	display: flex;
+	align-self: center;
+	font-size: 20px;
+	line-height: 1.3;
+	text-align: justify;
+ }
+ 
+ /*== BACK BUTTON == バックボタン ==*/
+ 
+ .Back-Btn {
+	 display:flex;
+	 justify-content: space-around;
+	 align-items: center;
+	 box-sizing: border-box;
+ }
+ 
+ .Btn-action {
+	 font-size: 20px;
+	 line-height: 1.3;
+	 display: block;
+	 position: relative;
+	 box-sizing: border-box;
+	 margin-top: 2em;
+	 padding: 15px 40px;
+	 color: #9B9B9B;
+	 background-color: #FFFFFF;
+	 text-align: center;
+	 border: solid 1px;
+	 border-radius: 2px;	  
+ }
+ 
+ /*== Pagefooter == ページフッター ==*/
+
+#pageFood {
+	position: absolute;
+	width: 100%;
+	height: 3em;
+	right: 0;
+	bottom: 0;
+	color: #9B9B9B;
+	letter-spacing: 2px;
+	word-spacing: -4px;
+}
+
+.Sub-Logo {
+	font-size: 20px;
+	text-align:right;
+}
+
+.copyright {
+	text-align: right;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+/*=== Smartphone’s UI === スマートフォン向けUI ===*/
+	
+@media screen and (max-width:600px) {
+	
+#pageBody {
+	padding-top: 30%;
+}
+
+.Number {
+		font-size: 100px;
+		line-height: 1.06;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+}
+	
+.Message {
+		font-size: 35px;
+		line-height: 1.17;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+}
+
+.String {
+	font-size: 16px;
+	line-height: 1.375;
+	text-align: center;
+}
+	
+/*== Pagefoote r== ページフッター ==*/
+
+.Sub-Logo {
+	font-size: 16px;
+	word-spacing: -2px;
+}
+
+.copyright  small {
+	font-size: 10px;
+	word-spacing: -2px;
+}
+
+	
+}
+
+	
+

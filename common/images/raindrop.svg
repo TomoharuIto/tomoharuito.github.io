@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"  
+     viewBox="0 0 100 50" overflow="hidden">
+	 
+		   <defs>
+				<path id="raindrops" d="M100,0 Q101,4 100,4 T100,0 Z"
+					  fill="rgba(255,255,255,0.80)"
+					  stroke="none"
+					  transform="rotate(15,100,2)" />
+		   </defs>
+		   
+		   		<use x="0" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-10" begin="1s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="1s" dur="13s" repeatCount="indefinite" />
+					<animate	attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="1s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-45" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-55" begin="1s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="1s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="1s" dur="13s" fill="remove" repeatCount="indefinite"	/>
+				</use>
+				<use x="-65" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-75" begin="3s" dur="13s" repeatCount="indefinite" />
+					<animate	attributeName="y" to="50" begin="3s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="3s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-85" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-95" begin="3s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="3s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="3s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-5" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-15" begin="5s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="5s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="5s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-30" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-40" begin="5s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="5s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="5s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-75" y="-25" xlink:href="#raindrops">
+					<animate	attributeName="x" to="-85" begin="9s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="9s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="9s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-10" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-20" begin="9s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="9s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="9s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-35" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-45" begin="11s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="11s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="11s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-95" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-105" begin="11s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="11s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="11s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-70" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-80" begin="13s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="13s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="13s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-25" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-35" begin="13s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="13s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="13s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-40" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-50" begin="17s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="17s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="17s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-15" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-25" begin="17s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="17s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="17s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-80" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-90" begin="19s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="19s" dur="13s" repeatCount="indefinite" />
+					<animate	attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="19s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-60" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-70" begin="19s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="19s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="19s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-50" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-60" begin="21s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="21s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="21s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+				<use x="-90" y="-25" xlink:href="#raindrops">
+					<animate attributeName="x" to="-100" begin="21s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="y" to="50" begin="21s" dur="13s" repeatCount="indefinite" />
+					<animate attributeName="fill-opacity" values="0;0.8;0" keyTimes="0; .5; 1" begin="21s" dur="13s" fill="remove" repeatCount="indefinite" />
+				</use>
+</svg>
