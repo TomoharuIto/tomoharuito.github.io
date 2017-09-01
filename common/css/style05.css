@@ -26,7 +26,7 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 96vh;
+  min-height: 98vh;
 }
 
 * a {
@@ -138,25 +138,12 @@ body * {
 @media screen and (max-width:700px) {
 
 /* ================================== */
-/* Whole  == ページ全体のデザイン */
-/* ================================== */
-
-#pageBody {
-  max-height: 90vh;
-}
-
-/* ================================== */
- /* == BACK BUTTON == バックボタン == */
-/* ================================== */
-
-/* .Btn-action {         */
-/*   font-size: 20px;    */
-/*   padding: 15px 40px; */
-/* }                     */
-
-/* ================================== */
 /* == Page footer == ページフッター == */
 /* ================================== */
+
+#pageFood {
+  padding-bottom: 5%;
+}
 
 .Host_on {
   font-size: 10px;
