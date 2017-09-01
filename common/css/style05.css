@@ -106,7 +106,7 @@ body * {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 20px;
+  font-size: 3vmin;
   text-align: right;
 }
 
@@ -119,13 +119,13 @@ body * {
 }
 
 .Sub-Logo {
-  font-size: 20px;
+  font-size: 3vmin;
   line-height: 0.3;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 3vmin;
   text-align: right;
 }
 
@@ -136,30 +136,5 @@ body * {
 /* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
 
 @media screen and (max-width:700px) {
-
-/* ================================== */
-/* == Page footer == ページフッター == */
-/* ================================== */
-
-#pageFood {
-  padding-bottom: -5%;
-}
-
-.Host_on {
-  font-size: 10px;
-}
-
-.Trademark {
-  padding: 0 2%;
-}
-
-.Sub-Logo {
-  font-size: 10px;
-}
-
-.copyright {
-  font-size: 10px;
-}
-
 
 }
