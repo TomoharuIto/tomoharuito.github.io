@@ -26,7 +26,7 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 90vh;
+  min-height: 96vh;
 }
 
 * a {
@@ -47,7 +47,7 @@ body * {
 }
 
 /* ================================== */
-/* == ERROR MESSAGE == エラーメッセージ == */
+/* == 404 MESSAGE == 404 メッセージ == */
 /* ================================== */
 
 #pageMain {
@@ -83,10 +83,10 @@ body * {
 }
 
 .Btn-action {
-   font-size: 30px;
+   font-size: 3vmin;
    display: block;
    margin-top: 3vmin;
-   padding: 25px 50px;
+   padding: 3vmin 10vmin;
    background-color: #FFFFFF;
    text-align: center;
    border: solid 1px;
@@ -102,7 +102,6 @@ body * {
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
-  /* padding-bottom: 1%; */
 }
 
 .Host_on {
@@ -139,28 +138,32 @@ body * {
 @media screen and (max-width:700px) {
 
 /* ================================== */
+/* Whole  == ページ全体のデザイン */
+/* ================================== */
+
+#pageBoby {
+  min-height: 90vh;
+}
+
+/* ================================== */
  /* == BACK BUTTON == バックボタン == */
 /* ================================== */
 
-.Btn-action {
-  font-size: 20px;
-  padding: 15px 40px;
-}
+/* .Btn-action {         */
+/*   font-size: 20px;    */
+/*   padding: 15px 40px; */
+/* }                     */
 
 /* ================================== */
 /* == Page footer == ページフッター == */
 /* ================================== */
-
-#pageFood {
-  /* padding-bottom: 6%; */
-}
 
 .Host_on {
   font-size: 10px;
 }
 
 .Trademark {
-  padding: 0 5%;
+  padding: 0 2%;
 }
 
 .Sub-Logo {
