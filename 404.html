@@ -11,44 +11,41 @@
     <title>404 PAGE NOT FOUND</title>
     <link rel="author" href="https://github.com/TomoharuIto">
     <link rel="canonical" href="https://tomoharuito.github.io">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!-- <= Normalize.css https://necolas.github.io/normalize.css/ -->
-    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" /> <!-- <= Google Fonts + Japanese Early Access https://googlefonts.github.io/japanese/#notosansjapanese -->
+    <!-- Normalize.css https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Google Fonts + Japanese Early Access https://googlefonts.github.io/japanese/#notosansjapanese -->
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
     <link rel="stylesheet" href="common/css/style05.css">
     <noscript><link rel="stylesheet" href="common/css/stylex.css"></noscript>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- <= jQuery http://jquery.com/ -->
+    <!-- jQuery http://jquery.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="common/js/script05.js"></script>
-    <script src="common/js/analytics.js"></script> <!-- <= Google Analytics  https://www.google.com/intl/ja_JP/analytics/ -->
+    <!-- Google Analytics  https://www.google.com/intl/ja_JP/analytics/ -->
+    <script src="common/js/analytics.js"></script>
   </head>
 
   <body id="pageBody">
-    <article class="wrapper-content">
+    <main id="pageMain" role="main">
+      <article>
+        <section>
+          <h1 class="Number">404</h1>
+          <h2 class="Message">PAGE<br>NOT FOUND</h2>
+          <p class="String">The page you are trying to reach does not exist.</p>
+        </section>
 
-      <main id="pageMain" role="main">
-        <div class="Error-message"><!-- ==========▼Error Message▼==========-->
-          <div class="Number">
-            <p><strong>404</strong></p>
-          </div>
-          <div class="Message">
-            <p><strong>PAGE<br>NOT FOUND</strong></p>
-          </div>
-          <div class="String">
-            <p>The page you are trying to reach does not exist.</p>
-          </div>
-        </div><!-- /.Error-message --> <!-- ==========▲Error Message▲==========-->
-        <nav role="navigation" class="Back-Btn"><!-- ==========▼Back Button▼==========-->
-          <div >
-            <p><a href="index.html" class="Btn-action">BACK</a></p>
-          </div>
-        </nav> <!-- /.Back-Btn --><!-- ==========▲Back Button▲==========-->
-      </main><!-- /#pageMain -->
+        <nav role="navigation" class="Back-Btn"><!-- ==========▼Back Button▼========== -->
+          <p><a href="index.html" class="Btn-action">BACK</a></p>
+        </nav> <!-- /.Back-Btn --><!-- ==========▲Back Button▲========== -->
+      </article>
+    </main><!-- /#pageMain -->
 
-      <footer id="pageFood"><!-- ==========▼Footer▼========== -->
-        <h3 class="Sub-Logo">TREE OF LIFE</h3>
+    <footer id="pageFood"><!-- ==========▼Footer▼========== -->
+      <aside class="Host_on"><p><small>Hosted on<a href="https://pages.github.com"> Github Pages</a></small></p></aside>
+      <div class="Trademark">
+        <p class="Sub-Logo">TREE OF LIFE</p>
         <p class="copyright"><small>&copy;<span id="year"></span> Tomoharu Ito</small></p>
-      </footer><!-- /#pageFood --><!-- ==========▲Footer▲========== -->
-
-    </article><!-- /.wrapper-content -->
+      </div>
+    </footer><!-- /#pageFood --><!-- ==========▲Footer▲========== -->
   </body><!-- /#pageBody -->
-
 </html>
 <!-- ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io -->
