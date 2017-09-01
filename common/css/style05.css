@@ -26,7 +26,7 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 96vh;
+  min-height: 100vh;
 }
 
 * a {
@@ -85,7 +85,7 @@ body * {
 .Btn-action {
    font-size: 30px;
    display: block;
-   margin-top: 2em;
+   margin-top: 3vmin;
    padding: 25px 50px;
    background-color: #FFFFFF;
    text-align: center;
@@ -147,12 +147,16 @@ body * {
 /* == Page footer == ページフッター == */
 /* ================================== */
 
+#pageFood {
+  padding-bottom: 3%;
+}
+
 .Host_on {
   font-size: 10px;
 }
 
 .Trademark {
-  padding: 0 1%;
+  padding: 0 5%;
 }
 
 .Sub-Logo {
