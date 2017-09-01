@@ -26,7 +26,7 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 * a {
@@ -102,7 +102,7 @@ body * {
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
-  padding-bottom: 1%;
+  /* padding-bottom: 1%; */
 }
 
 .Host_on {
@@ -152,7 +152,7 @@ body * {
 /* ================================== */
 
 #pageFood {
-  padding-bottom: 6%;
+  /* padding-bottom: 6%; */
 }
 
 .Host_on {
