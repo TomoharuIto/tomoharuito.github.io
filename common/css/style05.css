@@ -30,7 +30,6 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  /* min-height: 99vh; */
 }
 
 * a {
@@ -106,6 +105,7 @@ body * {
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
+  margin-bottom: 1%;
 }
 
 .Host_on {
