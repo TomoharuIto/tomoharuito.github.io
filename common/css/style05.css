@@ -7,6 +7,10 @@
 /* Whole  == ページ全体のデザイン */
 /* ================================== */
 
+html, body {
+  height: 100%;
+}
+
 body * {
   color: #9B9B9B;
   margin: 0;
@@ -14,7 +18,7 @@ body * {
   box-sizing: border-box;
 }
 
-* h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
+* h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
   vertical-align: bottom;
@@ -26,7 +30,7 @@ body * {
 #pageBody {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 99vh;
+  /* min-height: 99vh; */
 }
 
 * a {
@@ -129,7 +133,12 @@ body * {
   text-align: right;
 }
 
-#year {
-  vertical-align: bottom;
-}
+/* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
 
+@media screen and (max-width:700px) {
+
+/* ================================== */
+/* == Whole page == ページ全体 == */
+/* ================================== */
+
+}

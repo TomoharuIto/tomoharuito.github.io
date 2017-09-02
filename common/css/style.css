@@ -351,7 +351,7 @@ p.langCode {
 
 /* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
 
 /* ================================== */
 /* == Whole page == ページ全体 == */
