@@ -1,11 +1,15 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* Site-wide design  == サイト全体のデザイン */
+/* The whole of a Web site                                */
 /* ====================================================== */
 
 /* ================================== */
-/* Whole  == ページ全体のデザイン */
+/* The whole page                     */
 /* ================================== */
+
+html {
+  font-size: 62.5%; /* set the font to 10px */
+}
 
 body * {
   color: #737373;
@@ -14,11 +18,21 @@ body * {
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+#Warapper_contents {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 #pageBody {
-  position: relative;
+  /* position: relative; */
+  flex: auto;
+  justify-content: center;
   width: 95%;
-  margin: 4em auto;
+  margin: 4rem auto;
   padding: 0 2%;
   perspective-origin: top;
   background: repeating-linear-gradient(90deg, rgba(201, 201, 201, 1.00), rgba(201, 201, 201, 1.00) 3px, rgba(238,211,191,1.00) 3px, rgba(238,211,191,1.00) 23px, rgba(201, 201, 201, 1.00) 23px, rgba(201, 201, 201, 1.00) 26px, rgba(255,255,255,1.00) 26px, rgba(255, 255, 255, 1.00) 46px, rgba(201, 201, 201, 1.00) 46px, rgba(201, 201, 201, 1.00) 49px, rgba(238,211,191,1.00) 49px, rgba(238,211,191,1.00) 69px, rgba(201, 201, 201, 1.00) 69px, rgba(201, 201, 201, 1.00) 72px, rgba(255, 255, 255, 1.00) 72px, rgba(255, 255, 255, 1.00) 92px);
@@ -27,14 +41,15 @@ body * {
   border-image-slice: 21 fill;
   border-image-width: 32px;
   border-image-repeat: stretch;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   }
 
-* h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
+* h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
   vertical-align: bottom;
   line-height: 1.75;
+  -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,23 +63,20 @@ body * {
   list-style: none;
 }
 
-* img {
-  vertical-align: bottom;
-}
-
 ::-moz-selection {
   background: transparent;
   color: #CCCCCC;
-  text-shadow: 2px 2px 2px #737373;
+  text-shadow: 2rem 2rem 2rem #737373;
 }
 
 ::selection {
   background: transparent;
   color: #CCCCCC;
-  text-shadow: 2px 2px 2px #737373;
+  text-shadow: 2rem 2rem 2rem #737373;
 }
+
 /* ================================== */
-/* jQuery animation */
+/* jQuery animation                   */
 /* ================================== */
 
 * .hidden, * .hidden01 {
@@ -96,75 +108,75 @@ body * {
   animation: fade-out 1s ease none;
 }
 
-/* ================================== */
-/* == Title Logo == タイトルロゴ == */
+/* ================================= */
+/* Title of the Web site              */
 /* ================================== */
 
 #LogoPlate {
-   display: flex;
-   position: relative;
-   flex-flow: column nowrap;
-   flex: initial;
-   justify-content: center;
-   align-items: center;
-   font-size: 4.5em;
-   line-height: 1.08;
-   letter-spacing: 12px;
-   word-spacing: -10px;
-   padding: 2% 0;
-   margin: 10px 0;
-   box-sizing: border-box;
-   border: solid 1px #9B9B9B;
-   border-image-source: url(../images/Logo_underbar.svg);
-   border-image-width: 100px;
-   border-image-slice: 80;
+  /* display: flex;            */
+  /* position: relative;       */
+  /* flex-flow: column nowrap; */
+  /* flex: initial;            */
+  /* justify-content: center;  */
+  /* align-items: center;      */
+  font-size: 12rem;
+  text-align: center;
+  /* line-height: 1.08; */
+  letter-spacing: 2rem;
+  word-spacing: -1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: solid 1px #9B9B9B;
+  border-image-source: url(../images/Logo_underbar.svg);
+  border-image-width: 80rem;
+  border-image-slice: 80;
 }
 
 /* ================================== */
-/* == Sub head == 小見出し == */
+/* Headline                           */
 /* ================================== */
 
 h2 {
-  color: inherit;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: 4px;
-  border: solid 20px #9B9B9B;
+  /* color: inherit; */
+  font-size: 5rem;
+  /* line-height: 1.3; */
+  letter-spacing: 0.5rem;
+  border: solid 10px #9B9B9B;
   border-image-source: url(../images/subLogo_underbar.svg);
-  border-image-width: 150px;
+  border-image-width: 150rem;
   border-image-slice: 80;
-  padding-left: 15px;
-  margin-bottom: 20px;
+  padding-left: 5rem;
+  margin-bottom: 5rem;
 }
 
 /* ================================== */
-/* == Character == 文字 == */
+/* Character                          */
 /* ================================== */
 
-p.info {
-    font-size: 18px;
-    line-height: 1.4;
-    letter-spacing: 4px;
-    word-spacing: -4px;
-    padding-left: 20px;
-    margin: 3% 0 2% 1%;
-    border: solid 10px #9B9B9B;
-    border-image-source: url(../images/info.svg);
-    border-image-width: 100px;
-    border-image-slice: 80;
-}
+/* p.info {                                        */
+/*   font-size: 6rem;                              */
+/*   /* line-height: 1.4; */
+/*   /* letter-spacing: 4px; */
+/*   /* word-spacing: -4px;  */
+/*   padding-left: 20px;                           */
+/*   margin: 3% 0 2% 1%;                           */
+/*   border: solid 10px #9B9B9B;                   */
+/*   border-image-source: url(../images/info.svg); */
+/*   border-image-width: 100px;                    */
+/*   border-image-slice: 80;                       */
+/* }                                               */
 
 p.langCode {
-  font-size: 16px;
-  line-height: 1.375;
-  letter-spacing: 3px;
-  word-spacing: -3px;
+  font-size: 3rem;
+  /* line-height: 1.375; */
+  letter-spacing: 0.1rem;
+  /* word-spacing: -0.3rem; */
   margin: 1% 3%;
 }
 
 
 /* ================================== */
-/* == Responsive SVG == SVG(レスポンシブ用) == */
+/* Responsive SVG                     */
 /* ================================== */
 
 * svg {
@@ -177,7 +189,7 @@ p.langCode {
 
 
 /* ================================== */
-/* == Copy gard == コピーガード == */
+/* Prohibited to copy                 */
 /* ================================== */
 
 .WrapperImg {
@@ -194,6 +206,7 @@ p.langCode {
 }
 
 * img {
+  vertical-align: bottom;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -206,7 +219,7 @@ p.langCode {
 
 
 /* ================================== */
-/* == Translation == 翻訳 == */
+/* Translate                          */
 /* ================================== */
 
 .Translate {
@@ -223,7 +236,7 @@ p.langCode {
 }
 
 /* ================================== */
-/* == Global navigation == グローバルナビ== */
+/* Global Navigation Bar              */
 /* ================================== */
 
 #wrapper-globalNav {
@@ -241,12 +254,12 @@ p.langCode {
 
 .globalNav a {
   display: block;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: 4px;
-  word-spacing: -4px;
+  font-size: 3rem;
+  /* line-height: 1.3; */
+  letter-spacing: 0.4rem;
+  /* word-spacing: -4px; */
   padding: 6%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: #9B9B9B;
   background: rgba(255,255,255,0.10);
 }
@@ -291,7 +304,7 @@ p.langCode {
 }
 
 /* ================================== */
-/* == Smartphone's Menu Button == スマートフォン向けメニューボタン == */
+/* Smartphone's Menu Button           */
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
@@ -306,7 +319,7 @@ p.langCode {
 }
 
 /* ================================== */
-/* == Sticky Navi == スティッキーナビ == */
+/* Sticky Bar                         */
 /* ================================== */
 
 .fixed {
@@ -318,16 +331,23 @@ p.langCode {
 }
 
 /* ================================== */
-/* == Page footer == ページフッター == */
+/* Page Footer                        */
 /* ================================== */
 
+/* #pageFood {           */
+/*   display: block;     */
+/*   position: absolute; */
+/*   height: 3em;        */
+/*   width: 100%;        */
+/*   right: 0;           */
+/*   bottom: -3.5em;     */
+/* }                     */
 #pageFood {
-  display: block;
-  position: absolute;
-  height: 3em;
-  width: 100%;
-  right: 0;
-  bottom: -3.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: initial;
+  justify-content: flex-end;
+  margin-bottom: 0.5%;
 }
 
 .Sub-Logo {
