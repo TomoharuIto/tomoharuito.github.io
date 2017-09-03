@@ -7,8 +7,8 @@
 /* Whole  == ページ全体のデザイン */
 /* ================================== */
 
-html, body {
-  height: 100%;
+html {
+  font-size: 100%; /* set the base font to 16px */
 }
 
 body * {
@@ -16,6 +16,10 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* footer下部固定に必要 */
 }
 
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
@@ -54,7 +58,7 @@ body * {
 /* ================================== */
 
 #pageMain {
-  display: flex; /* コンテンツを中央寄せにするために子要素にも必要 */
+  display: flex; /* コンテンツ中央寄せに子要素にも必要 */
   flex: auto;
   justify-content: center;
   align-items: center;
@@ -63,16 +67,16 @@ body * {
 .Number {
   text-align: center;
   align-cotent: center;
-  font-size: 20vmin;
+  font-size: 10rem;
 }
 
 .Message {
   text-align: center;
-  font-size: 10vmin;
+  font-size: 4rem
 }
 
 .String {
-  font-size: 3vmin;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -86,9 +90,9 @@ body * {
 }
 
 .Btn-action {
-   font-size: 3vmin;
+   font-size: 2rem;
    display: block;
-   margin-top: 3vmin;
+   margin-top: 4vmin;
    padding: 3vmin 10vmin;
    background-color: #FFFFFF;
    text-align: center;
@@ -110,7 +114,7 @@ body * {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 3vmin;
+  font-size: 1.5rem;
   text-align: right;
 }
 
@@ -123,22 +127,34 @@ body * {
 }
 
 .Sub-Logo {
-  font-size: 3vmin;
+  font-size: 1.5rem;
   line-height: 0.3;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 3vmin;
+  font-size: 1.5rem;
   text-align: right;
 }
 
 /* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
 
 /* ================================== */
 /* == Whole page == ページ全体 == */
 /* ================================== */
+
+html {
+  font-size: 50%;
+}
+
+/* ================================== */
+ /* == BACK BUTTON == バックボタン == */
+/* ================================== */
+
+.Btn-action {
+  padding: 5vmin 15vmin;
+}
 
 }
