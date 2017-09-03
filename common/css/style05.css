@@ -27,6 +27,7 @@ html, body {
   font-weight: normal;
   vertical-align: bottom;
   line-height: 1.2;
+  -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -90,14 +91,14 @@ html, body {
 }
 
 .Btn-action {
-   font-size: 3rem;
-   display: block;
-   margin-top: 5vmin;
-   padding: 3vmin 10vmin;
-   background-color: #FFFFFF;
-   text-align: center;
-   border: solid 1px;
-   border-radius: 2px;
+  font-size: 3rem;
+  display: block;
+  margin-top: 5vmin;
+  padding: 3vmin 10vmin;
+  background-color: #FFFFFF;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 2px;
 }
 
 /* ================================== */
