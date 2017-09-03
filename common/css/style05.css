@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* 404 Page's CSS == 404ページのCSS */
+/* 404 Page's CSS                                         */
 /* ====================================================== */
 
 /* ================================== */
-/* Whole  == ページ全体のデザイン */
+/* The whole page                     */
 /* ================================== */
 
 html {
-  font-size: 100%; /* set the base font to 16px */
+  font-size: 62.5%; /* set the base font to 10px */
 }
 
 body * {
@@ -54,7 +54,7 @@ html, body {
 }
 
 /* ================================== */
-/* == 404 MESSAGE == 404 メッセージ == */
+/* 404 Message                        */
 /* ================================== */
 
 #pageMain {
@@ -67,21 +67,21 @@ html, body {
 .Number {
   text-align: center;
   align-cotent: center;
-  font-size: 10rem;
+  font-size: 16rem;
 }
 
 .Message {
   text-align: center;
-  font-size: 4rem
+  font-size: 6rem
 }
 
 .String {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 /* ================================== */
- /* == BACK BUTTON == バックボタン == */
+/* == Back button                     */
 /* ================================== */
 
 .Back-Btn {
@@ -90,9 +90,9 @@ html, body {
 }
 
 .Btn-action {
-   font-size: 2rem;
+   font-size: 3rem;
    display: block;
-   margin-top: 4vmin;
+   margin-top: 5vmin;
    padding: 3vmin 10vmin;
    background-color: #FFFFFF;
    text-align: center;
@@ -101,7 +101,7 @@ html, body {
 }
 
 /* ================================== */
-/* == Page footer == ページフッター == */
+/* Page Footer                        */
 /* ================================== */
 
 #pageFood {
@@ -109,12 +109,12 @@ html, body {
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
-  margin-bottom: 1%;
+  margin-bottom: 0.5%;
 }
 
 .Host_on {
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: right;
 }
 
@@ -127,34 +127,60 @@ html, body {
 }
 
 .Sub-Logo {
-  font-size: 1.5rem;
-  line-height: 0.3;
+  font-size: 2rem;
+  line-height: 0.5rem;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: right;
 }
 
-/* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
+/* ==================== Responsive Web Design ====================> */
+
+/* ==================== When the screen size is 1400px or more ====================> */
+
+@media screen and (min-width:1400px) {
+
+html {
+  font-size: 80%;
+}
+
+}
+
+/* ==================== When the screen size is 800px or less  ====================> */
 
 @media screen and (max-width:800px) {
 
 /* ================================== */
-/* == Whole page == ページ全体 == */
+/* The whole page                     */
 /* ================================== */
 
 html {
-  font-size: 50%;
+  font-size: 40%;
 }
 
 /* ================================== */
- /* == BACK BUTTON == バックボタン == */
+/* == Back button                     */
 /* ================================== */
 
 .Btn-action {
-  padding: 5vmin 15vmin;
+  padding: 4vmin 12vmin;
+}
+
+}
+
+/* ==================== When the screen size is 600px or less ====================> */
+
+@media screen and (max-width:600px) {
+
+/* ================================== */
+/* The whole page                     */
+/* ================================== */
+
+html {
+  font-size: 30%;
 }
 
 }
