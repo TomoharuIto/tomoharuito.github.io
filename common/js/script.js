@@ -239,7 +239,7 @@ $(function(){
     {
       type:'text',
       text:'Engrish',
-      'font-family':'Helvetica Neue Thin',
+      'font-family':'"Helvetica Neue", Arial',
       x:'-40',
       y:14,
       fill:'#fff',

@@ -7,9 +7,9 @@
 /* The whole page                     */
 /* ================================== */
 
-html {
-  font-size: 62.5%; /* set the base font to 10px */
-}
+/* html {                                            */
+/* font-size: 62.5%; /* set the base font to 10px */
+/* }                                                 */
 
 body * {
   color: #9B9B9B;
@@ -59,7 +59,7 @@ html, body {
 /* ================================== */
 
 #pageMain {
-  display: flex; /* コンテンツ中央寄せに子要素にも必要 */
+  display: flex;
   flex: auto;
   justify-content: center;
   align-items: center;
@@ -68,21 +68,21 @@ html, body {
 .Number {
   text-align: center;
   align-cotent: center;
-  font-size: 16rem;
+  font-size: 16vmin;
 }
 
 .Message {
   text-align: center;
-  font-size: 6rem
+  font-size: 8vmin;
 }
 
 .String {
-  font-size: 4rem;
+  font-size: 6vmin;
   text-align: center;
 }
 
 /* ================================== */
-/* == Back button                     */
+/* Back button                        */
 /* ================================== */
 
 .Back-Btn {
@@ -91,7 +91,7 @@ html, body {
 }
 
 .Btn-action {
-  font-size: 3rem;
+  font-size: 3vmin;
   display: block;
   margin-top: 5vmin;
   padding: 3vmin 10vmin;
@@ -115,7 +115,7 @@ html, body {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 2rem;
+  font-size: 3vmin;
   text-align: right;
 }
 
@@ -128,13 +128,13 @@ html, body {
 }
 
 .Sub-Logo {
-  font-size: 2rem;
-  line-height: 0.5rem;
+  font-size: 3vmin;
+  line-height: 0.5vmin;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 3vmin;
   text-align: right;
 }
 
@@ -144,9 +144,9 @@ html, body {
 
 @media screen and (min-width:1400px) {
 
-html {
-  font-size: 80%;
-}
+/* html {            */
+/*   font-size: 80%; */
+/* }                 */
 
 }
 
@@ -159,7 +159,7 @@ html {
 /* ================================== */
 
 html {
-  font-size: 40%;
+  /* font-size: 40%; */
 }
 
 /* ================================== */
@@ -167,7 +167,7 @@ html {
 /* ================================== */
 
 .Btn-action {
-  padding: 4vmin 12vmin;
+  /* padding: 4vmin 12vmin; */
 }
 
 }
@@ -181,7 +181,7 @@ html {
 /* ================================== */
 
 html {
-  font-size: 30%;
+  /* font-size: 30%; */
 }
 
 }
