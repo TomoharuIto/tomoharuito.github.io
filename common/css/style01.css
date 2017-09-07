@@ -13,6 +13,10 @@
   padding-top: 50px;
 }
 
+.Profile {
+  max-width: 100%;
+}
+
 /*== Slideshow == スライドショー ==*/
 
 .Slide {
@@ -279,4 +283,4 @@
   width: 50px;
 }
 
-  }
+}

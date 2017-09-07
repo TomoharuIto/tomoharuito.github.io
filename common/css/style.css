@@ -82,9 +82,9 @@ body * {
   transform-style: preserve-3d;
   opacity: 0;
   /* display: flex;           */
-  /* flex: auto;              */
+  /* flex: initial;           */
   /* justify-content: center; */
-  /* align-items: center; */
+  /* align-items: center;     */
 }
 
 @keyframes fade-in {
