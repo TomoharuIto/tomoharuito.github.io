@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* The whole of a Web site                                */
+/* The whole of a Website                                 */
 /* ====================================================== */
 
 /* ================================== */
 /* The whole page                     */
 /* ================================== */
 
-html {
-font-size: 62.5%; /* set the font to 10px */
-}
+/* html {                                       */
+/* font-size: 62.5%; /* set the font to 10px */
+/* }                                            */
 
 body * {
   color: #737373;
@@ -19,22 +19,21 @@ body * {
 }
 
 #pageBody {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-flow: column nowrap;
-  flex: auto;
+  flex: initial;
   justify-content: center;
   width: 95%;
-  margin: 4rem auto;
+  margin: 4vmin auto;
   padding: 0 2%;
   perspective-origin: top;
   background: repeating-linear-gradient(90deg, rgba(201, 201, 201, 1.00), rgba(201, 201, 201, 1.00) 3px, rgba(238,211,191,1.00) 3px, rgba(238,211,191,1.00) 23px, rgba(201, 201, 201, 1.00) 23px, rgba(201, 201, 201, 1.00) 26px, rgba(255,255,255,1.00) 26px, rgba(255, 255, 255, 1.00) 46px, rgba(201, 201, 201, 1.00) 46px, rgba(201, 201, 201, 1.00) 49px, rgba(238,211,191,1.00) 49px, rgba(238,211,191,1.00) 69px, rgba(201, 201, 201, 1.00) 69px, rgba(201, 201, 201, 1.00) 72px, rgba(255, 255, 255, 1.00) 72px, rgba(255, 255, 255, 1.00) 92px);
-  border: solid 1px #9B9B9B; /* <= ダミーとして必要 */
+  border: solid 1px #9B9B9B; /* required as a dummy */
   border-image: url(../images/border.svg);
   border-image-slice: 21 fill;
   border-image-width: 32px;
   border-image-repeat: stretch;
-  /* box-sizing: border-box; */
   }
 
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
@@ -76,7 +75,7 @@ body * {
   display: none;
 }
 
- #pageMain {   /* ▼この指定により ＃pageMain 要素以下の子要素に position:fixed; が効かなくなっています注意してください。▼ */
+ #pageMain { /* ▼この指定により ＃pageMain 要素以下の子要素に position:fixed; が効かなくなっています注意してください。▼ */
   transform: scale(0.95);
   transform-origin: top;
   transform-style: preserve-3d;
@@ -106,20 +105,20 @@ body * {
 }
 
 /* ================================= */
-/* Title of the Web site              */
-/* ================================== */
+/* Title of the Web site             */
+/* ================================= */
 
 #LogoPlate {
-  font-size: 13rem;
+  font-size: 13vmin;
   text-align: center;
   white-space: nowrap;
-  letter-spacing: 2rem;
-  word-spacing: -1rem;
-  padding: 1rem 0;
-  margin: 1rem 0;
+  letter-spacing: 2vmin;
+  word-spacing: -1vmin;
+  padding: 1vmin 0;
+  margin: 1vmin 0;
   border: solid 1px #9B9B9B;
   border-image-source: url(../images/Logo_underbar.svg);
-  border-image-width: 80rem;
+  border-image-width: 80vmin;
   border-image-slice: 80;
 }
 
@@ -128,41 +127,25 @@ body * {
 /* ================================== */
 
 h2 {
-  /* color: inherit; */
-  font-size: 5rem;
-  /* line-height: 1.3; */
-  letter-spacing: 0.5rem;
+  font-size: 5vmin;
+  letter-spacing: 0.5vmin;
   border: solid 10px #9B9B9B;
   border-image-source: url(../images/subLogo_underbar.svg);
-  border-image-width: 150rem;
+  border-image-width: 150vmin;
   border-image-slice: 80;
-  padding-left: 5rem;
-  margin-bottom: 5rem;
+  padding-left: 5vmin;
+  margin-bottom: 5vmin;
 }
 
 /* ================================== */
 /* Character                          */
 /* ================================== */
 
-/* p.info {                                        */
-/*   font-size: 6rem;                              */
-/*   /* line-height: 1.4; */
-/*   /* letter-spacing: 4px; */
-/*   /* word-spacing: -4px;  */
-/*   padding-left: 20px;                           */
-/*   margin: 3% 0 2% 1%;                           */
-/*   border: solid 10px #9B9B9B;                   */
-/*   border-image-source: url(../images/info.svg); */
-/*   border-image-width: 100px;                    */
-/*   border-image-slice: 80;                       */
-/* }                                               */
-
 p.langCode {
-  font-size: 3rem;
-  letter-spacing: 0.1rem;
+  font-size: 3vmin;
+  letter-spacing: 0.1vmin;
   margin: 1% 3%;
 }
-
 
 /* ================================== */
 /* Responsive SVG                     */
@@ -175,7 +158,6 @@ p.langCode {
   top: 0;
   left: 0;
 }
-
 
 /* ================================== */
 /* Prohibited to copy                 */
@@ -205,7 +187,6 @@ p.langCode {
   -khtml-user-drag: none;
   -webkit-touch-callout: none;
 }
-
 
 /* ================================== */
 /* Translate                          */
@@ -243,12 +224,10 @@ p.langCode {
 
 .globalNav a {
   display: block;
-  font-size: 3rem;
-  /* line-height: 1.3; */
+  font-size: 3vmin;
   letter-spacing: 0.4rem;
   /* word-spacing: -4px; */
   padding: 6%;
-  /* box-sizing: border-box; */
   color: #9B9B9B;
   background: rgba(255,255,255,0.10);
 }
@@ -261,7 +240,7 @@ p.langCode {
 .dropdownMenu {
   position: relative;
   text-align: center;
-    width: 25%;
+  width: 25%;
   z-index: 3;
 }
 
@@ -332,38 +311,105 @@ p.langCode {
 /*   bottom: -3.5em;     */
 /* }                     */
 #pageFood {
+  /* display: flex;             */
+  /* flex-flow: row nowrap;     */
+  /* flex: initial;             */
+  /* justify-content: flex-end; */
+  margin-bottom: 0.5%;
+}
+
+.Colophon {
   display: flex;
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
-  margin-bottom: 0.5%;
+}
+
+.Host_on {
+  align-self: flex-end;
+  font-size: 3vmin;
+  text-align: right;
+}
+
+.Host_on a {
+  color: #9DBED5;
+}
+
+.Trademark {
+  padding: 0 2%;
 }
 
 .Sub-Logo {
-  font-size: 25px;
-  text-align: right;
-  color: #9B9B9B;
-  letter-spacing: 2px;
+  font-size: 3vmin;
+  line-height: 0.5vmin;
 }
 
 .copyright {
-  font-size: 15px;
+  white-space: nowrap;
+  font-size: 3vmin;
   text-align: right;
 }
+/* .Sub-Logo {                  */
+/*   font-size: 25rem;          */
+/*   text-align: right;         */
+/*   color: #9B9B9B;            */
+/*   letter-spacing: 2px;       */
+/* }                            */
 
-.copyright small {
-  letter-spacing: 2px;
-  word-spacing: -4px;
-  white-space: nowrap;
-  color: #9B9B9B;
+/* .copyright {                 */
+/*   font-size: 15px;           */
+/*   text-align: right;         */
+/* }                            */
+
+/* .copyright small {           */
+/*   /* letter-spacing: 2px; */ */
+/*   /* word-spacing: -4px;  */ */
+/*   white-space: nowrap;       */
+/*   color: #9B9B9B;            */
+/* }                            */
+
+/* ==================== Responsive Web Design ====================> */
+
+/* ==================== When the screen size is 1400px or more ====================> */
+
+@media screen and (min-width:1400px) {
+
 }
 
-/* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
+/* ==================== When the screen size is 800px or less  ====================> */
+
+@media screen and (max-width:800px) {
+
+/* ================================== */
+/* The whole page                     */
+/* ================================== */
+
+
+/* ================================== */
+/* Back button                        */
+/* ================================== */
+
+
+}
+
+/* ==================== When the screen size is 600px or less ====================> */
+
+@media screen and (max-width:600px) {
+
+/* ================================== */
+/* The whole page                     */
+/* ================================== */
+
+
+}
+/* ==================== Responsive Web Design ====================> */
+
+/* ==================== When the screen size is 700px or less ====================> */
 
 @media screen and (max-width:700px) {
 
 /* ================================== */
-/* == Whole page == ページ全体 == */
+/* The whole page                     */
 /* ================================== */
 
 #pageBody {
@@ -377,53 +423,53 @@ p.langCode {
   opacity: 1;
 }
 
-/* ================================== */
-/* == Title Logo == タイトルロゴ ＝＝ */
-/* ================================== */
+/* ================================= */
+/* Title of the Web site             */
+/* ================================= */
 
 #LogoPlate {
-  font-size: 2.5em;
-  line-heignt: 1.24;
-  letter-spacing: 3px;
-  word-spacing: -5px;
-  padding-top: 15px;
+  /* font-size: 2.5em; */
+  /* line-heignt: 1.24; */
+  /* letter-spacing: 3px; */
+  /* word-spacing: -5px; */
+  /* padding-top: 15px; */
 }
 
 /* ================================== */
-/* == Sub head == 小見出し == */
+/* Headline                           */
 /* ================================== */
 
 h2 {
-  font-size: 15px;
-  line-height: 1.4;
-  letter-spacing: 4px;
+  /* font-size: 15px;     */
+  /* line-height: 1.4;    */
+  /* letter-spacing: 4px; */
   border: solid 10px #9B9B9B;
   border-image-source: url(../images/subLogo_underbar.svg);
   border-image-width: 150px;
   border-image-slice: 80;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 /* ================================== */
-/* == Character == 文字 == */
+/* Character                          */
 /* ================================== */
 
 p.info {
-  font-size: 13px;
-  line-height: 1.5;
-  padding-left: 10px;
-  border-image-slice: 70;
+  /* font-size: 13px;    */
+  /* line-height: 1.5;   */
+  /* padding-left: 10px; */
+  /* border-image-slice: 70; */
 }
 
  p.langCode {
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 2px;
-  word-spacing: -2px;
+  /* font-size: 14px;     */
+  /* line-height: 1.42;   */
+  /* letter-spacing: 2px; */
+  /* word-spacing: -2px;  */
 }
 
 /* ================================== */
-/* == Translation == 翻訳 == */
+/* Translate                          */
 /* ================================== */
 
 .Translate {
@@ -433,11 +479,12 @@ p.info {
 }
 
 /* ================================== */
-/* == Smartphone's Menu Button == スマートフォン向けメニューボタン == */
+/* Smartphone's Menu Button           */
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
-    display: block;
+    /* display: block; */
+  display: flex;
 }
 
 #wrapper-globalNav .menuBtn a {
@@ -495,7 +542,7 @@ p.info {
 }
 
 /* ================================== */
-/* == Sticky Navi == スティッキーナビ == */
+/* Sticky Bar                         */
 /* ================================== */
 
 #wrapper-globalNav.fixed {
@@ -503,7 +550,7 @@ p.info {
 }
 
 /* ================================== */
-/* == Page footer == ページフッター == */
+/* Page Footer                        */
 /* ================================== */
 
 #pageFood {

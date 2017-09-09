@@ -106,11 +106,18 @@ html, body {
 /* ================================== */
 
 #pageFood {
+  /* display: flex;             */
+  /* flex-flow: row nowrap;     */
+  /* flex: initial;             */
+  /* justify-content: flex-end; */
+  margin-bottom: 0.5%;
+}
+
+.Colophon {
   display: flex;
   flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-end;
-  margin-bottom: 0.5%;
 }
 
 .Host_on {
@@ -144,10 +151,6 @@ html, body {
 
 @media screen and (min-width:1400px) {
 
-/* html {            */
-/*   font-size: 80%; */
-/* }                 */
-
 }
 
 /* ==================== When the screen size is 800px or less  ====================> */
@@ -158,17 +161,11 @@ html, body {
 /* The whole page                     */
 /* ================================== */
 
-html {
-  /* font-size: 40%; */
-}
 
 /* ================================== */
 /* == Back button                     */
 /* ================================== */
 
-.Btn-action {
-  /* padding: 4vmin 12vmin; */
-}
 
 }
 
@@ -180,8 +177,5 @@ html {
 /* The whole page                     */
 /* ================================== */
 
-html {
-  /* font-size: 30%; */
-}
 
 }
