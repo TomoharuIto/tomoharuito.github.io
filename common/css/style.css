@@ -19,7 +19,7 @@ body * {
 }
 
 #pageBody {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   flex: initial;
@@ -302,19 +302,12 @@ p.langCode {
 /* Page Footer                        */
 /* ================================== */
 
-/* #pageFood {           */
-/*   display: block;     */
-/*   position: absolute; */
-/*   height: 3em;        */
-/*   width: 100%;        */
-/*   right: 0;           */
-/*   bottom: -3.5em;     */
-/* }                     */
 #pageFood {
-  /* display: flex;             */
-  /* flex-flow: row nowrap;     */
-  /* flex: initial;             */
-  /* justify-content: flex-end; */
+  position: absolute;
+  height: 3em;
+  width: 100%;
+  right: 0;
+  bottom: -3.5em;
   margin-bottom: 0.5%;
 }
 
@@ -349,24 +342,6 @@ p.langCode {
   font-size: 3vmin;
   text-align: right;
 }
-/* .Sub-Logo {                  */
-/*   font-size: 25rem;          */
-/*   text-align: right;         */
-/*   color: #9B9B9B;            */
-/*   letter-spacing: 2px;       */
-/* }                            */
-
-/* .copyright {                 */
-/*   font-size: 15px;           */
-/*   text-align: right;         */
-/* }                            */
-
-/* .copyright small {           */
-/*   /* letter-spacing: 2px; */ */
-/*   /* word-spacing: -4px;  */ */
-/*   white-space: nowrap;       */
-/*   color: #9B9B9B;            */
-/* }                            */
 
 /* ==================== Responsive Web Design ====================> */
 
