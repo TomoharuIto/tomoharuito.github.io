@@ -16,8 +16,23 @@
   padding-top: 50px;
 }
 
+.side_by_side {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: initial;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Intro {
+  flex-basis: 50%;
+  flex-shrink: 1;
+}
+
 .Profile {
   max-width: 100%;
+  height: auto;
+  flex-basis: auto;
+  flex-shrink: 1;
 }
 
 /* ================================== */
@@ -103,7 +118,9 @@
   fill: rgba(255,255,255,0.60);
 }
 
-/*=== Tab Contents === タブコンテンツ ===*/
+/* ================================== */
+/* Tab Contents                       */
+/* ================================== */
 
 /*== Tab == タブ ==*/
 

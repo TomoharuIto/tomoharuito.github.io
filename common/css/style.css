@@ -20,10 +20,10 @@ body * {
 
 #pageBody {
   position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  flex: initial;
-  justify-content: center;
+  /* display: flex;            */
+  /* flex-flow: column nowrap; */
+  /* flex: initial;            */
+  /* justify-content: center;  */
   width: 95%;
   margin: 4vmin auto;
   padding: 0 2%;
@@ -80,10 +80,6 @@ body * {
   transform-origin: top;
   transform-style: preserve-3d;
   opacity: 0;
-  /* display: flex;           */
-  /* flex: initial;           */
-  /* justify-content: center; */
-  /* align-items: center;     */
 }
 
 @keyframes fade-in {
