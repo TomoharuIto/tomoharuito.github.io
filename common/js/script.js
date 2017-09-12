@@ -1,4 +1,11 @@
-//=== Drop-down Menu === ドロップダウンメニュー ===
+// ======================================================
+// JS for the whole of a Website
+// ======================================================
+
+// ==================================
+// Dropdown Menu
+// ==================================
+
 $(function(){
 
   function mediaDetect(query){
@@ -38,7 +45,9 @@ $(function(){
 
 });
 
-//=== Fade Animation === フェードアニメーション ===
+// ==================================
+// Fade animation
+// ==================================
 
 $(function(){
 
@@ -60,7 +69,9 @@ $(function(){
 
 });
 
-//=== Smartphones　Global navigation === スマートフォン用グローバルナビ ===
+// ==================================
+// Smartphon Global navigation Button
+// ==================================
 
 $(function(){
 
@@ -121,7 +132,9 @@ $(function(){
 
 });
 
-//=== Sticky Nave === スティッキーナビ ＝＝＝
+// ==================================
+// Sticky Bar
+// ==================================
 
 $(function(){
 
@@ -184,7 +197,9 @@ $(function(){
   });
 });
 
-//=== Translation Language === 翻訳 ===
+// ==================================
+// Translate
+// ==================================
 
 $(function(){
 
@@ -291,7 +306,9 @@ $(function(){
 
 });
 
-//=== Copy guard === コピーガード ===
+// ==================================
+// Prohibited to copy
+// ==================================
 
 $(function(){
 
@@ -327,13 +344,15 @@ $(function(){
       return false;
     }
   })
-  .bind('copy', function(){ // <= コピーを無効化
+  .bind('copy', function(){ // <= Disabling copy
     return false;
   });
 
 });
 
-//=== Update Copyright === コピーライトの更新 ===
+// ==================================
+// Copylight year update automatically
+// ==================================
 
 window.onload = function(){
 

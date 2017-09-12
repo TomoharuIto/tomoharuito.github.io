@@ -1,4 +1,10 @@
-// === Back Button animation === バックボタンのアニメーション ===
+// ======================================================
+// 404 page's JS
+// ======================================================
+
+// ==================================
+// Back button animation
+// ==================================
 
 $(function(){
   var value = 0.5;
@@ -39,7 +45,9 @@ $(function(){
   });
 });
 
-//=== Copy guard === コピーガード ===
+// ==================================
+// Prohibited to copy
+// ==================================
 
 $(function(){
 
@@ -52,13 +60,15 @@ $(function(){
       return false;
     }
   })
-  .bind('copy', function(){ // ◀ コピーを無効化
+  .bind('copy', function(){ // <= disabling copy
     return false;
   });
 
 });
 
-//=== Update Copyright === コピーライトの更新 ===
+// ==================================
+// Copylight year update automatically
+// ==================================
 
 window.onload = function(){
 

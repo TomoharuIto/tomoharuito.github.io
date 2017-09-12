@@ -106,10 +106,6 @@ html, body {
 /* ================================== */
 
 #pageFood {
-  /* display: flex;             */
-  /* flex-flow: row nowrap;     */
-  /* flex: initial;             */
-  /* justify-content: flex-end; */
   margin-bottom: 0.5%;
 }
 
@@ -163,7 +159,7 @@ html, body {
 
 
 /* ================================== */
-/* == Back button                     */
+/*    Back button                     */
 /* ================================== */
 
 

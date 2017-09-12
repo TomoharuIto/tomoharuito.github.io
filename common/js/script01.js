@@ -1,4 +1,10 @@
-//=== Slideshow === スライドショー ===
+// ======================================================
+// Main page's JS
+// ======================================================
+
+// ==================================
+// Slideshow
+// ==================================
 
 $(function(){
   var intervalId;
@@ -42,11 +48,13 @@ $(function(){
 
 });
 
-//=== Tab Contents === タブコンテンツ ===
+// ==================================
+// Tab contents
+// ==================================
 
 $(function(){
 
-	$('.tabMenu')
+  $('.tabMenu')
   .on('click', 'li > a', function(event){
     event.preventDefault();
     var $this = $(this);
@@ -70,7 +78,7 @@ $(function(){
 });
 
 // ========================================
-// Back to top of page === ページの先頭へ戻る
+// Back to top of page
 // ========================================
 
 $(function(){
@@ -124,7 +132,9 @@ $(function(){
 });
 // ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io
 
-//=== Main Image === メインイメージ ===
+// ==================================
+// Insert imagge files
+// ==================================
 /*
 $(function(){
   $('#MainImage').find('img.MainImage').attr({
