@@ -67,7 +67,7 @@ $(function(){
 });
 
 // ==================================
-// Copylight year update automatically
+// Copyright year update automatically
 // ==================================
 
 window.onload = function(){

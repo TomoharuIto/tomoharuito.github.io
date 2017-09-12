@@ -133,7 +133,7 @@ $(function(){
 // ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io
 
 // ==================================
-// Insert imagge files
+// Insert image files
 // ==================================
 /*
 $(function(){

@@ -70,7 +70,7 @@ $(function(){
 });
 
 // ==================================
-// Smartphon Global navigation Button
+// Smartphone Global navigation Button
 // ==================================
 
 $(function(){
@@ -351,7 +351,7 @@ $(function(){
 });
 
 // ==================================
-// Copylight year update automatically
+// Copyright year update automatically
 // ==================================
 
 window.onload = function(){
