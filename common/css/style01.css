@@ -241,22 +241,6 @@
   right: 3%;
 }
 
-/*== Profile == プロフィール ==*/
-/*
-.Prof {
-  flex-flow: column nowrap;
-}
-
-.Prof img {
-  max-width: 70%;
-  margin: 0 auto;
-}
-
-.Prof table {
-  margin-top: 20px;
-  font-size: 13px;
-}
-*/
 
 /* ================================== */
 /* Horizonal Tab                      */
@@ -317,7 +301,7 @@
 }
 
 /* ================================== */
-/* Back to top Button             */
+/* Back to top Button                 */
 /* ================================== */
 
 .topBtn {

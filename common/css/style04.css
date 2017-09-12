@@ -1,9 +1,10 @@
 @charset "UTF-8";
-
-/*==== CONTACT PAGE ==== コンタクトページのデザイン ====*/
+/* ====================================================== */
+/* Contact page's CSS                                     */
+/* ====================================================== */
 
 #CONTACT {
-	padding-top: 30px;
+  padding-top: 30px;
 }
 
 .Artboards {
@@ -12,20 +13,24 @@
   align-items: center;
 }
 
-/*== Mail Form == メールフォーム ==*/
+/* ================================== */
+/* Mail form                          */
+/* ================================== */
 
 #Mail {
-	width: 275px;
-	height: auto;
-	margin: 2% auto 0;
+  width: 275px;
+  height: auto;
+  margin: 2% auto 0;
 }
 
 #Mail text {
-	letter-spacing: 2px;
-	word-spacing: 1px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
 }
 
-/*== Images == 画像ファイル ==*/
+/* ================================== */
+/* Image files                        */
+/* ================================== */
 
 .Post_left {
 display: flex;
@@ -40,16 +45,19 @@ flex: initial;
   margin-bottom: 20px;
 }
 
-/*== Smartphone's UI == スマートフォン向けUI ==*/
+/* ==================== Responsive Web Design ====================> */
 
-@media screen and (max-width:600px) {
+
+/* ==================== When the screen size is 700px or less ====================> */
+
+@media screen and (max-width:700px) {
 
 #Mail {
-	width: 150px;
-	}
+  width: 150px;
+  }
 
 .Post_left img {
   max-width: 60%;
 }
 
-	}
+  }

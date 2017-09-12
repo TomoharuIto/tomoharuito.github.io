@@ -1,242 +1,256 @@
 @charset "UTF-8";
+/* ====================================================== */
+/* Gallery page's CSS                                     */
+/* ====================================================== */
 
-/*==== GRLLERY PAGE ==== ギャラリーページのデザイン ====*/
-
-/*== Subhead == 小見出し ==*/
+/* ================================== */
+/* Headline                           */
+/* ================================== */
 
 #PORTFOLIO {
-	padding-top: 30px;
+  padding-top: 30px;
 }
-/*
-#STUDY {
-	margin-top: -50px;
-	padding-top: 50px;
-}
-*/
 
-/*=== Gallery === ギャラリー ===*/
-
-/*== Modal window == モーダルウィンドウ ==*/
+/* ================================== */
+/* Modal window                       */
+/* ================================== */
 
 .Modal {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255,0.80);
-	vertical-align: baseline;
-	z-index: 3;
-	opacity: 0;
-	-webkit-perspective: 3000px;
-	perspective: 3000px;
-	-webkit-perspective-origin: center;
-	perspective-origin: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.80);
+  vertical-align: baseline;
+  z-index: 3;
+  opacity: 0;
+  -webkit-perspective: 3000px;
+  perspective: 3000px;
+  -webkit-perspective-origin: center;
+  perspective-origin: center;
 }
 
 .show {
-	display: flex;
-	flex: initial;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex: initial;
+  justify-content: center;
+  align-items: center;
 }
 
-/*=== Around the SVG === SVG周り ===*/
+/* ================================== */
+/* SVG                                */
+/* ================================== */
 
 .Screen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 100%;
-	z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 100%;
+  z-index: 4;
 }
 
 .Screen rect {
-	fill: transparent;
-	stroke: none;
+  fill: transparent;
+  stroke: none;
 }
 
 .prev {
-	position: absolute;
-	left: 5%;
-	bottom: 45%;
-	box-sizing: border-box;
-	height: 0;
-	padding: 5%;
-	z-index: 5;
+  position: absolute;
+  left: 5%;
+  bottom: 45%;
+  box-sizing: border-box;
+  height: 0;
+  padding: 5%;
+  z-index: 5;
 }
 
 
 .prev polyline {
-	fill: none;
-	stroke: rgba(201, 201, 201, 0.60);
-	stroke-width: 10;
-	stroke-linecap: round;
-	stroke-linejoin: round;
+  fill: none;
+  stroke: rgba(201, 201, 201, 0.60);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .prev circle {
-	fill: rgba(255,255,255,0.60);
+  fill: rgba(255,255,255,0.60);
 }
 
 .next {
-	position: absolute;
-	right: 5%;
-	bottom: 45%;
-	box-sizing: border-box;
-	height: 0;
-	padding: 5%;
-	z-index: 5;
+  position: absolute;
+  right: 5%;
+  bottom: 45%;
+  box-sizing: border-box;
+  height: 0;
+  padding: 5%;
+  z-index: 5;
 }
 
 .next polyline {
-	fill: none;
-	stroke: rgba(201, 201, 201, 0.60);
-	stroke-width: 10;
-	stroke-linecap: round;
-	stroke-linejoin: round;
+  fill: none;
+  stroke: rgba(201, 201, 201, 0.60);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .next circle {
-	fill: rgba(255,255,255,0.60);
+  fill: rgba(255,255,255,0.60);
 }
 
 .close {
-	position: absolute;
-	bottom: 8%;
-	right: 2%;
-	box-sizing: border-box;
-	height: 0;
-	padding: 3%;
-	z-index: 5;
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
+  box-sizing: border-box;
+  height: 0;
+  padding: 3%;
+  z-index: 5;
 }
 
 .close circle {
-	fill: #C9C9C9;
+  fill: #C9C9C9;
 }
 
 .close line {
-	stroke: #fff;
-	stroke-width: 5;
-	stroke-linecap: round;
-	}
+  stroke: #fff;
+  stroke-width: 5;
+  stroke-linecap: round;
+  }
 
 .close text {
-	text-anchor: middle;
-	fill: #C9C9C9;
+  text-anchor: middle;
+  fill: #C9C9C9;
 }
 
-/*== Thumbnail == サムネイル ==*/
+/* ================================== */
+/* Thumbnail                          */
+/* ================================== */
 
 .Gallery {
-	display: flex;
-	flex-flow: row wrap;
-	flex: initial;
-	justify-content: space-around;
-	align-items: center;
-	align-content: space-around;
-	margin-bottom: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  flex: initial;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin-bottom: 20%;
 }
 
 .PicFrames  {
-	display: flex;
-	flex: 0 1 30%;
-	position: relative;
-	justify-content: space-around;
-	align-content: space-around;
-	margin: 20px;
-	box-sizing: border-box;
+  display: flex;
+  flex: 0 1 30%;
+  position: relative;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 .PicFrames img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	vertical-align: bottom;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
 .caption {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: -3%; /* ◀ 0だと意図せず右にずれるので */
-	width: 100%;
-	height: 100%;
-	text-align: left;
-	font-size: 18px;
-	padding: 20% 2%;
-	color: rgba(255,241,229,1.00);
-	background:rgba(218,223,255,0.80);
-	box-sizing: border-box;
-	z-index: 2;
-	vertical-align: bottom;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -3%; /* ◀ 0だと意図せず右にずれるので */
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 18px;
+  padding: 20% 2%;
+  color: rgba(255,241,229,1.00);
+  background:rgba(218,223,255,0.80);
+  box-sizing: border-box;
+  z-index: 2;
+  vertical-align: bottom;
 }
 
-/*=== Back to the Top === トップへ戻るボタン ===*/
+/* ================================== */
+/* Back to top Button                 */
+/* ================================== */
 
 .topBtn {
-	position: fixed;
-	bottom: 2%;
-	right: 3%;
-	width: 8%;
-	height: auto;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  width: 8%;
+  height: auto;
 }
 
 #Arrow {
-	display: none;
+  display: none;
 }
 
-/*=== Smartphone’s UI === スマートフォン向けUI ===*/
+/* ==================== Responsive Web Design ====================> */
 
-@media screen and (max-width:600px) {
 
-/*== Subhead == 小見出し ==*/
+/* ==================== When the screen size is 700px or less ====================> */
+
+@media screen and (max-width:700px) {
+
+/* ================================== */
+/* Headline                           */
+/* ================================== */
 
 #PORTFOLIO {
-	margin-top: 60px;
-	padding-top: 0;
+  margin-top: 60px;
+  padding-top: 0;
 }
 
-/*=== Gallery === ギャラリー ===*/
 
-/*== Thumbnail == サムネイル ==*/
+/* ================================== */
+/* Thumbnail                          */
+/* ================================== */
 
 .PicFrames {
-	display: flex;
-	flex: 0 1 30%;
-	flex-wrap: wrap;
+  display: flex;
+  flex: 0 1 30%;
+  flex-wrap: wrap;
 }
 /*
 .PicFrames  img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 */
-/*=== Around the SVG === SVG周り ===*/
+
+/* ================================== */
+/* SVG                                */
+/* ================================== */
 
 .prev {
-	padding: 10%;
-	bottom: 7%;
-	left: 3%;
+  padding: 10%;
+  bottom: 7%;
+  left: 3%;
 }
 
 .next {
-	padding: 10%;
-	bottom: 7%;
-	right: 3%;
+  padding: 10%;
+  bottom: 7%;
+  right: 3%;
 }
 
 .close {
-	padding: 30px;
-	top: 2%;
+  padding: 30px;
+  top: 2%;
 }
 
-/*=== Back to the Top === トップへ戻るボタン ===*/
+/* ================================== */
+/* Back to top Button                 */
+/* ================================== */
 
 .topBtn {
-	bottom: 30px;
-	right: 10px;
-	width: 50px;
+  bottom: 30px;
+  right: 10px;
+  width: 50px;
 }
 
 }
