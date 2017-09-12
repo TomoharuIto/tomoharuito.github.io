@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* The whole of a Website                                 */
+/* The whole of a Website setting                         */
 /* ====================================================== */
 
 /* ================================== */
 /* The whole page                     */
 /* ================================== */
 
-/* html {                                       */
-/* font-size: 62.5%; /* set the font to 10px */
-/* }                                            */
+html {
+  font-size: 62.5%; /* set the font to 10px */
+}
 
 body * {
   color: #737373;
@@ -20,13 +20,9 @@ body * {
 
 #pageBody {
   position: relative;
-  /* display: flex;            */
-  /* flex-flow: column nowrap; */
-  /* flex: initial;            */
-  /* justify-content: center;  */
   width: 95%;
-  margin: 4vmin auto;
-  padding: 0 2%;
+  margin: 6rem auto;
+  padding: 2rem;
   perspective-origin: top;
   background: repeating-linear-gradient(90deg, rgba(201, 201, 201, 1.00), rgba(201, 201, 201, 1.00) 3px, rgba(238,211,191,1.00) 3px, rgba(238,211,191,1.00) 23px, rgba(201, 201, 201, 1.00) 23px, rgba(201, 201, 201, 1.00) 26px, rgba(255,255,255,1.00) 26px, rgba(255, 255, 255, 1.00) 46px, rgba(201, 201, 201, 1.00) 46px, rgba(201, 201, 201, 1.00) 49px, rgba(238,211,191,1.00) 49px, rgba(238,211,191,1.00) 69px, rgba(201, 201, 201, 1.00) 69px, rgba(201, 201, 201, 1.00) 72px, rgba(255, 255, 255, 1.00) 72px, rgba(255, 255, 255, 1.00) 92px);
   border: solid 1px #9B9B9B; /* required as a dummy */
@@ -105,16 +101,16 @@ body * {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 13vmin;
+  font-size: 8rem;
   text-align: center;
   white-space: nowrap;
-  letter-spacing: 2vmin;
-  word-spacing: -1vmin;
-  padding: 1vmin 0;
-  margin: 1vmin 0;
+  letter-spacing: 2rem;
+  word-spacing: -1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
   border: solid 1px #9B9B9B;
   border-image-source: url(../images/Logo_underbar.svg);
-  border-image-width: 80vmin;
+  border-image-width: 80rem;
   border-image-slice: 80;
 }
 
@@ -123,14 +119,14 @@ body * {
 /* ================================== */
 
 h2 {
-  font-size: 5vmin;
-  letter-spacing: 0.5vmin;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
   border: solid 10px #9B9B9B;
   border-image-source: url(../images/subLogo_underbar.svg);
-  border-image-width: 150vmin;
+  border-image-width: 150rem;
   border-image-slice: 80;
-  padding-left: 5vmin;
-  margin-bottom: 5vmin;
+  padding-left: 3%;
+  margin-bottom: 3%;
 }
 
 /* ================================== */
@@ -138,8 +134,8 @@ h2 {
 /* ================================== */
 
 p.langCode {
-  font-size: 3vmin;
-  letter-spacing: 0.1vmin;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
   margin: 1% 3%;
 }
 
@@ -191,9 +187,9 @@ p.langCode {
 .Translate {
   display: block;
   position: absolute;
-  top: -3.3em;
-  right: 15px;
-  width: 110px;
+  top: -5rem;
+  right: 1.5rem;
+  width: 13rem;
   height: auto;
 }
 
@@ -300,11 +296,10 @@ p.langCode {
 
 #pageFood {
   position: absolute;
-  height: 3em;
+  height: 3rem;
   width: 100%;
   right: 0;
-  bottom: -3.5em;
-  margin-bottom: 0.5%;
+  bottom: -6rem;
 }
 
 .Colophon {
@@ -316,7 +311,7 @@ p.langCode {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 3vmin;
+  font-size: 1.5rem;
   text-align: right;
 }
 
@@ -329,14 +324,15 @@ p.langCode {
 }
 
 .Sub-Logo {
-  font-size: 3vmin;
-  line-height: 0.5vmin;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  text-align: left;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 3vmin;
-  text-align: right;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 /* ==================== Responsive Web Design ====================> */

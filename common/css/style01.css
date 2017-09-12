@@ -16,6 +16,10 @@
   padding-top: 50px;
 }
 
+/* ================================== */
+/* Main contents                      */
+/* ================================== */
+
 .side_by_side {
   display: flex;
   flex-flow: row nowrap;
@@ -23,6 +27,7 @@
   justify-content: center;
   align-items: flex-start;
 }
+
 .Intro {
   flex-basis: 50%;
   flex-shrink: 1;
