@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* Top page of a Website                                  */
+/* Main page's CSS                                        */
 /* ====================================================== */
 
 /* ================================== */
@@ -119,10 +119,8 @@
 }
 
 /* ================================== */
-/* Tab Contents                       */
+/* Horizonal Tab                      */
 /* ================================== */
-
-/*== Tab == タブ ==*/
 
 .tabMenu {
   display: flex;
@@ -159,7 +157,9 @@
   background: #EED3BF;
   }
 
-/*== NEWS == ニュース ==*/
+/* ================================== */
+/* Tab contents                       */
+/* ================================== */
 
 .tabContents {
   box-sizing: border-box;
@@ -186,7 +186,10 @@
   background-color: #FFF1E5;
 }
 
-/*=== Back to the Top === トップへ戻るボタン ===*/
+
+/* ================================== */
+/* Back to top Button                 */
+/* ================================== */
 
 .topBtn {
   position: fixed;
@@ -200,19 +203,26 @@
   display: none;
 }
 
-/*=== Smartphone’s UI === スマートフォン向けUI ===*/
+
+/* ==================== Responsive Web Design ====================> */
+
+
+/* ==================== When the screen size is 600px or less ====================> */
 
 @media screen and (max-width:600px) {
 
-
-/*== ABOUT・INFORMATION == トップ・インフォメーション ==*/
+/* ================================== */
+/* Headline                           */
+/* ================================== */
 
 #ABOUT, #INFORMATION {
   margin-top: 30px;
   padding-top: 0;
 }
 
-/*== Slideshow == スライドショー ==*/
+/* ================================== */
+/* Slideshow                          */
+/* ================================== */
 
 .prev {
   padding: 5%;
@@ -227,7 +237,7 @@
 }
 
 /*== Profile == プロフィール ==*/
-
+/*
 .Prof {
   flex-flow: column nowrap;
 }
@@ -241,8 +251,12 @@
   margin-top: 20px;
   font-size: 13px;
 }
+*/
 
-/*== Tab Contents ==   タブコンテンツ ==*/
+/* ================================== */
+/* Horizonal Tab                      */
+/* ================================== */
+
 .tabMenu {
   padding-top: 20px;
 }
@@ -268,7 +282,9 @@
   background: #EED3BF;
 }
 
-/*== NEWS == ニュース ==*/
+/* ================================== */
+/* Tab contents                       */
+/* ================================== */
 
 .tabContents {
   min-height: 250px;
@@ -295,9 +311,9 @@
   display: none;
 }
 
-/*=== Back to the Top === トップへ戻るボタン ===*/
-
-@media screen and (max-width:600px) {
+/* ================================== */
+/* Back to top Button             */
+/* ================================== */
 
 .topBtn {
   bottom: 30px;

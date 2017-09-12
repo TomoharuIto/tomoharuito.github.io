@@ -75,8 +75,8 @@ body * {
   display: none;
 }
 
- #pageMain { /* ▼この指定により ＃pageMain 要素以下の子要素に position:fixed; が効かなくなっています注意してください。▼ */
-  transform: scale(0.95);
+ /* Caution! Due to ＃pageMain's setting, doesn't work 'position:fixed' property */
+#pageMain {   transform: scale(0.95);
   transform-origin: top;
   transform-style: preserve-3d;
   opacity: 0;
