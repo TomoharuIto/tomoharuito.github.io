@@ -8,7 +8,7 @@
 /* ================================== */
 
 html {
-  font-size: 62.5%; /* set the font to 10px */
+font-size: 62.5%; /* set the font to 10px */
 }
 
 body * {
@@ -28,7 +28,7 @@ body * {
   border: solid 1px #9B9B9B; /* required as a dummy */
   border-image: url(../images/border.svg);
   border-image-slice: 21 fill;
-  border-image-width: 32px;
+  border-image-width: 3.2rem;
   border-image-repeat: stretch;
   }
 
@@ -101,7 +101,7 @@ body * {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 8rem;
+  font-size: 13vmin;
   text-align: center;
   white-space: nowrap;
   letter-spacing: 2rem;
@@ -311,7 +311,7 @@ p.langCode {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: right;
 }
 
@@ -324,28 +324,28 @@ p.langCode {
 }
 
 .Sub-Logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 0.5rem;
   text-align: left;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
 }
 
 /* ==================== Responsive Web Design ====================> */
 
-/* ==================== When the screen size is 1400px or more ====================> */
+/* ==================== When the screen size is 1366px or more ====================> */
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1366px) {
 
 }
 
-/* ==================== When the screen size is 800px or less  ====================> */
+/* ==================== When the screen size is 1024px or less  ====================> */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1024px) {
 
 /* ================================== */
 /* The whole page                     */
@@ -359,9 +359,9 @@ p.langCode {
 
 }
 
-/* ==================== When the screen size is 600px or less ====================> */
+/* ==================== When the screen size is 568px or less ====================> */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:568px) {
 
 /* ================================== */
 /* The whole page                     */
@@ -371,22 +371,22 @@ p.langCode {
 }
 /* ==================== Responsive Web Design ====================> */
 
-/* ==================== When the screen size is 700px or less ====================> */
+/* ==================== When the screen size is 736px or less ====================> */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:736px) {
 
 /* ================================== */
 /* The whole page                     */
 /* ================================== */
 
-html {
-  font-size: 40%;
-}
+/* html {            */
+/*   font-size: 40%; */
+/* }                 */
 
 #pageBody {
   width: 98%;
-  border-image-width: 20px;
-  margin: 3.3em auto;
+  border-image-width: 2rem;
+  margin: 4.5rem auto;
 }
 
 #pageMain {
@@ -399,10 +399,11 @@ html {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 4rem;
+  font-size: 10vmin;
   letter-spacing: 0.9rem;
   word-spacing: -0.5rem;
-  padding-top: 0.3rem;
+  padding: 0;
+  margin: 0.5rem 0;
 }
 
 /* ================================== */
@@ -410,13 +411,8 @@ html {
 /* ================================== */
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   letter-spacing: 0.4rem;
-  /* border: solid 10px #9B9B9B;                               */
-  /* border-image-source: url(../images/subLogo_underbar.svg); */
-  /* border-image-width: 150rem;                               */
-  /* border-image-slice: 80;                                   */
-  /* padding-left: 1%;                                         */
 }
 
 /* ================================== */
@@ -424,10 +420,7 @@ h2 {
 /* ================================== */
 
  p.langCode {
-  font-size: 2.5rem;
-  /* line-height: 1.42;   */
-  /* letter-spacing: 0.2rem; */
-  /* word-spacing: -2px;  */
+  font-size: 2rem;
 }
 
 /* ================================== */
@@ -435,13 +428,13 @@ h2 {
 /* ================================== */
 
 .Translate {
-  width: 70px;
-  top: -2em;
-  right: 55px;
+  width: 8rem;
+  top: -3.5em;
+  right: 4rem;
 }
 
 /* ================================== */
-/* Smartphone's Menu Button           */
+/* Smartphone Menu Button           */
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
@@ -472,7 +465,7 @@ h2 {
 #current > a {
   box-shadow: none;
   background:  rgba(201, 201, 201, 0.50);
-  color: #fff;
+  color: #FCFCFC;
 }
 
 

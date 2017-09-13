@@ -212,7 +212,7 @@ $(function(){
       y:0,
       width:10,
       height:30,
-      fill:'#fff',
+      fill:'#FCFCFC',
       stroke:'#C9C9C9',
       'stroke-width':'1px',
       r:2,
@@ -224,7 +224,7 @@ $(function(){
       y:0,
       width:85,
       height:30,
-      fill:'#fff',
+      fill:'#FCFCFC',
       stroke:'none',
       r:2,
       href:'#'
@@ -232,7 +232,7 @@ $(function(){
     {
       type:'text',
       text:'Japanese',
-      'font-family':'Helvetica Neue Thin',
+      'font-family':'"Helvetica Neue", Arial, sans-serif',
       x:53,
       y:14,
       fill:'#9B9B9B',
@@ -254,10 +254,10 @@ $(function(){
     {
       type:'text',
       text:'Engrish',
-      'font-family':'"Helvetica Neue", Arial',
+      'font-family':'"Helvetica Neue", Arial, sans-serif',
       x:'-40',
       y:14,
-      fill:'#fff',
+      fill:'#FCFCFC',
       stroke:'none',
       'font-size':'16em',
       href:'#'
