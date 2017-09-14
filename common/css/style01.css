@@ -28,16 +28,12 @@
   align-items: flex-start;
 }
 
-.Intro {
-  flex-basis: 50%;
-  flex-shrink: 1;
-}
-
 .Profile {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
-  flex-basis: auto;
-  flex-shrink: 1;
+  padding: 2%;
+  /* flex-basis: auto; */
+  /* flex-shrink: 1;   */
 }
 
 /* ================================== */
@@ -212,9 +208,9 @@
 /* ==================== Responsive Web Design ====================> */
 
 
-/* ==================== When the screen size is 600px or less ====================> */
+/* ==================== When the screen size is 736px or less ====================> */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:736px) {
 
 /* ================================== */
 /* Headline                           */
@@ -223,6 +219,21 @@
 #ABOUT, #INFORMATION {
   margin-top: 30px;
   padding-top: 0;
+}
+
+/* ================================== */
+/* Main contents                      */
+/* ================================== */
+
+.side_by_side {
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.Profile {
+  max-width: 75%;
+  height: auto;
+  padding: 2%;
 }
 
 /* ================================== */
