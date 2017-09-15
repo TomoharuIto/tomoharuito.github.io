@@ -101,7 +101,7 @@ body * {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 10vmax;
+  font-size: 10vw;
   text-align: center;
   white-space: nowrap;
   letter-spacing: 2rem;
@@ -399,7 +399,7 @@ p.langCode {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 10vmin;
+  /* font-size: 10vmin; */
   letter-spacing: 0.9rem;
   word-spacing: -0.5rem;
   padding: 0;
