@@ -7,9 +7,11 @@
 /* The whole page                     */
 /* ================================== */
 
-/* html {                                                        */
-/*   font-size: calc(10 / 16 * 100%); */
-/* }                                                             */
+/* cf. https://zellwk.com/blog/viewport-based-typography/ */
+html {
+font-size: calc(0.875em + 0.25 * (100 - 80em) / 33.3);
+font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 33.3);
+}
 
 body * {
   color: #737373;
@@ -33,11 +35,11 @@ body * {
   border-image-repeat: stretch;
   }
 
-* h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
+* h1, * h2, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
   vertical-align: bottom;
-  line-height: 1.75;
+  /* line-height: 1.75; */
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -102,10 +104,12 @@ body * {
 /* ================================= */
 
 #LogoPlate {
-  font-size: 9vw;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 4);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 4);
   text-align: center;
   white-space: nowrap;
   letter-spacing: 2vw;
+  line-height: 1.75;
   word-spacing: -1vw;
   padding: 1vw 0;
   margin: 1vw 0;
@@ -120,14 +124,16 @@ body * {
 /* ================================== */
 
 h2 {
-  font-size: 4vmin;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 15);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 15);
   letter-spacing: 0.5vmin;
+  line-height: 1;
   border: solid 10px #9B9B9B;
   border-image-source: url(../images/subLogo_underbar.svg);
   border-image-width: 150vmin;
   border-image-slice: 80;
-  padding-left: 3vmin;
-  margin-bottom: 3vmin;
+  padding-left: 2%;
+  margin-bottom: 3%;
 }
 
 /* ================================== */
@@ -135,8 +141,10 @@ h2 {
 /* ================================== */
 
 p.langCode {
-  font-size: 3vw;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 100);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 100);
   letter-spacing: 0.1vw;
+  line-height: 1.75;
   padding: 0 3%;
 }
 
@@ -189,7 +197,7 @@ p.langCode {
   display: block;
   position: absolute;
   top: -8vmin;
-  right: 15vmin;
+  right: 3vmin;
   width: 20vmin;
   height: auto;
 }
@@ -217,7 +225,7 @@ p.langCode {
 
 .globalNav a {
   display: block;
-  font-size: 2.3vw;
+  /* font-size: 2.3vw; */
   letter-spacing: 0.3vw;
   padding: 6%;
   color: #9B9B9B;
@@ -296,7 +304,6 @@ p.langCode {
 
 #pageFood {
   position: absolute;
-  /* height: 40rem; */
   min-width: 100%;
   right: 0;
   bottom: -3%;
@@ -311,7 +318,7 @@ p.langCode {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 2vmax;
+  /* font-size: 2vmax; */
   text-align: right;
 }
 
@@ -324,14 +331,14 @@ p.langCode {
 }
 
 .Sub-Logo {
-  font-size: 2vmax;
+  /* font-size: 2vmax; */
   line-height: 0.5vmax;
   text-align: left;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 2vmax;
+  /* font-size: 2vmax; */
   text-align: left;
 }
 
@@ -367,10 +374,6 @@ p.langCode {
 /* ================================== */
 /* The whole page                     */
 /* ================================== */
-
-html {
-  /* font-size: calc(6 / 16 * 100%); */
-}
 
 #pageBody {
   /* width: 98%;               */
@@ -417,9 +420,8 @@ h2 {
 /* ================================== */
 
 .Translate {
-  /* width: 8rem; */
-  /* top: -3.5em; */
-  /* right: 7rem; */
+  top: -8vmin;
+  right: 15vmin;
 }
 
 /* ================================== */
@@ -427,8 +429,8 @@ h2 {
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
-    /* display: block; */
-  display: flex;
+    display: block;
+  /* display: flex; */
 }
 
 #wrapper-globalNav .menuBtn a {
@@ -507,7 +509,7 @@ h2 {
 }
 
 .Host_on a {
-  color: #9DBED5;
+  /* color: #9DBED5; */
 }
 
 .Trademark {
@@ -520,7 +522,7 @@ h2 {
 }
 
 .copyright {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   /* font-size: 1.3rem; */
 }
 

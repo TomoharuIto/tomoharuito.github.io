@@ -237,7 +237,7 @@ $(function(){
       y:14,
       fill:'#9B9B9B',
       stroke:'none',
-      'font-size':'15em',
+      'font-size':'14rem',
       href:'#'
     },
     {
@@ -259,7 +259,7 @@ $(function(){
       y:14,
       fill:'#FCFCFC',
       stroke:'none',
-      'font-size':'16em',
+      'font-size':'16rem',
       href:'#'
     }
     ]);
