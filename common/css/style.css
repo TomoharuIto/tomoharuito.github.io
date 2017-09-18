@@ -17,7 +17,7 @@ body * {
 #pageBody {
   position: relative;
   width: calc(100% * 0.96);
-  margin: 15vmin auto 5vmin;
+  margin: 10vmin auto 5vmin;
   padding: 2vw;
   box-sizing: border-box;
   perspective-origin: top;
@@ -32,8 +32,9 @@ body * {
 * h1, * h2, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
+  line-height: 1.75;
   vertical-align: bottom;
-  -webkit-text-size-adjust: none;
+  /* -webkit-text-size-adjust: none; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -68,7 +69,8 @@ body * {
 }
 
  /* Caution! Due to ＃pageMain's setting, doesn't work 'position:fixed' property */
-#pageMain {   transform: scale(0.95);
+#pageMain {
+  transform: scale(0.95);
   transform-origin: top;
   transform-style: preserve-3d;
   opacity: 0;
@@ -135,8 +137,8 @@ h2 {
 /* ================================== */
 
 p.langCode {
-  font-size: calc(0.875em + 0.25 * (100 - 80em) / 100);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 100);
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
   letter-spacing: 0.1vw;
   line-height: 1.75;
   padding: 0 3%;
@@ -302,7 +304,7 @@ p.langCode {
   min-width: 100%;
   padding-bottom: 0.5%;
   right: 0;
-  bottom: -3%;
+  bottom: -6.5vw;
 }
 
 .Colophon {
@@ -350,6 +352,10 @@ p.langCode {
 /* ================================== */
 /* The whole page                     */
 /* ================================== */
+
+  #pageBody {
+  margin: 10vmin auto 8vmin;
+}
 
 #pageMain {
   transform: none;
@@ -429,6 +435,14 @@ p.langCode {
 
 #wrapper-globalNav.fixed {
   width: 100%;
+}
+
+/* ================================== */
+/* Page Footer                        */
+/* ================================== */
+
+#pageFood {
+  bottom: -14vmin;
 }
 
 }

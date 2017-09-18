@@ -1,4 +1,8 @@
-//=== Google アナリティクス === Google Analytics ===
+// ======================================================
+// Google Analytics
+// ======================================================
+// This file is the Google Analytics file of this site.
+// Even if you copy it, there is no merit.
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
