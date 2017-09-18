@@ -7,12 +7,6 @@
 /* The whole page                     */
 /* ================================== */
 
-/* cf. https://zellwk.com/blog/viewport-based-typography/ */
-html {
-font-size: calc(0.875em + 0.25 * (100 - 80em) / 33.3);
-font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 33.3);
-}
-
 body * {
   color: #737373;
   margin: 0;
@@ -23,7 +17,7 @@ body * {
 #pageBody {
   position: relative;
   width: calc(100% * 0.96);
-  margin: 10vmin auto;
+  margin: 15vmin auto 5vmin;
   padding: 2vw;
   box-sizing: border-box;
   perspective-origin: top;
@@ -39,7 +33,6 @@ body * {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
   vertical-align: bottom;
-  /* line-height: 1.75; */
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,6 +97,7 @@ body * {
 /* ================================= */
 
 #LogoPlate {
+  /* cf. https://zellwk.com/blog/viewport-based-typography/ */
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 4);
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 4);
   text-align: center;
@@ -225,7 +219,8 @@ p.langCode {
 
 .globalNav a {
   display: block;
-  /* font-size: 2.3vw; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
   letter-spacing: 0.3vw;
   padding: 6%;
   color: #9B9B9B;
@@ -305,6 +300,7 @@ p.langCode {
 #pageFood {
   position: absolute;
   min-width: 100%;
+  padding-bottom: 0.5%;
   right: 0;
   bottom: -3%;
 }
@@ -318,7 +314,8 @@ p.langCode {
 
 .Host_on {
   align-self: flex-end;
-  /* font-size: 2vmax; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
   text-align: right;
 }
 
@@ -327,45 +324,24 @@ p.langCode {
 }
 
 .Trademark {
-  padding: 0 2%;
+  padding-left: 2vw;
 }
 
 .Sub-Logo {
-  /* font-size: 2vmax; */
-  line-height: 0.5vmax;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  line-height: 0.5;
   text-align: left;
 }
 
 .copyright {
   white-space: nowrap;
-  /* font-size: 2vmax; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
   text-align: left;
 }
 
 /* ==================== Responsive Web Design ====================> */
-
-/* ==================== When the screen size is 1366px or more ====================> */
-
-@media screen and (min-width:1366px) {
-
-}
-
-/* ==================== When the screen size is 1024px or less  ====================> */
-
-@media screen and (max-width:1024px) {
-
-/* ================================== */
-/* The whole page                     */
-/* ================================== */
-
-
-/* ================================== */
-/* Back button                        */
-/* ================================== */
-
-
-}
-
 
 /* ==================== When the screen size is 736px or less ====================> */
 
@@ -375,44 +351,9 @@ p.langCode {
 /* The whole page                     */
 /* ================================== */
 
-#pageBody {
-  /* width: 98%;               */
-  /* border-image-width: 2rem; */
-  /* margin: 4.5rem auto;      */
-}
-
 #pageMain {
   transform: none;
   opacity: 1;
-}
-
-/* ================================= */
-/* Title of the Web site             */
-/* ================================= */
-
-/* #LogoPlate {              */
-/*   font-size: 10vw;        */
-/*   letter-spacing: 0.9rem; */
-/*   word-spacing: -0.5rem;  */
-/*   padding: 0;             */
-/*   margin: 0.5rem 0;       */
-/* }                         */
-
-/* ================================== */
-/* Headline                           */
-/* ================================== */
-
-h2 {
-  /* font-size: 2.3rem; */
-  /* letter-spacing: 0.4rem; */
-}
-
-/* ================================== */
-/* Character                          */
-/* ================================== */
-
- p.langCode {
-  /* font-size: 2rem; */
 }
 
 /* ================================== */
@@ -430,14 +371,9 @@ h2 {
 
 #wrapper-globalNav .menuBtn {
     display: block;
-  /* display: flex; */
 }
 
 #wrapper-globalNav .menuBtn a {
-  /* display: block; */
-  /* position: fixed; */
-  /* top: 10px;   */
-  /* right: 10px; */
   z-index: 1;
 }
 
@@ -493,51 +429,6 @@ h2 {
 
 #wrapper-globalNav.fixed {
   width: 100%;
-}
-
-/* ================================== */
-/* Page Footer                        */
-/* ================================== */
-
-#pageFood {
-  /* height: 1rem;  */
-  /* bottom: -2rem; */
-}
-
-.Host_on {
-  /* font-size: 1.3rem; */
-}
-
-.Host_on a {
-  /* color: #9DBED5; */
-}
-
-.Trademark {
-  /* padding: 0 2%; */
-}
-
-.Sub-Logo {
-  /* font-size: 1.3rem; */
-  /* line-height: 0.5rem; */
-}
-
-.copyright {
-  /* white-space: nowrap; */
-  /* font-size: 1.3rem; */
-}
-
-}
-
-/* ==================== When the screen size is 414px or less ====================> */
-
-@media screen and (max-width:414px) {
-
-/* ================================== */
-/* The whole page                     */
-/* ================================== */
-
-html {
-  /* font-size: calc(5 / 16 * 100%); */
 }
 
 }
