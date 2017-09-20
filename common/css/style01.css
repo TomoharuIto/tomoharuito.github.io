@@ -125,11 +125,12 @@
 
 .tabMenu {
   display: flex;
-   flex-flow: row nowrap;
+  flex-flow: row nowrap;
   flex: initial;
   justify-content: flex-start;
   align-items: flex-start;
-  box-sizing: border-box;
+  -webkit-tap-hightlight-color: transparent;
+/* box-sizing: border-box; */
 }
 
 .tabMenu li a {
