@@ -199,8 +199,8 @@
   /* pheight: auto; */
   bottom: 2vmin;
   right: 3vw;
-  width: 8vmin;
-  height: 8vmin;
+  width: 10vw;
+  height: auto;
 }
 
 #Arrow {
