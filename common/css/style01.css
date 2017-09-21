@@ -17,26 +17,6 @@
 }
 
 /* ================================== */
-/* Main contents                      */
-/* ================================== */
-
-.side_by_side {
-  display: flex;
-  flex-flow: row nowrap;
-  flex: initial;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.Profile {
-  max-width: 50%;
-  height: auto;
-  padding: 2%;
-  /* flex-basis: auto; */
-  /* flex-shrink: 1;   */
-}
-
-/* ================================== */
 /* Slideshow                          */
 /* ================================== */
 
@@ -120,6 +100,24 @@
 }
 
 /* ================================== */
+/* Main contents                      */
+/* ================================== */
+
+.side_by_side {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: initial;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Profile {
+  max-width: 50%;
+  height: auto;
+  padding:0 5vw;
+}
+
+/* ================================== */
 /* Horizonal Tab                      */
 /* ================================== */
 
@@ -134,10 +132,13 @@
 .tabMenu li a {
   display: block;
   text-align: center;
-  font-size: 20px;
-  padding-top: 7%;
-  height: 50px;
-  width: 150px;
+  /* font-size: 20px; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  padding: 2vmin 10vmin;
+  /* padding-top: 7%; */
+  /* height: 50px; */
+  /* width: 150px; */
   color: #9B9B9B;
   background: #FFF1E5;
 }
@@ -160,16 +161,18 @@
 
 .tabContents {
   min-height: 500px;
-  margin-bottom: 5%;
+  margin-bottom: 8vmin;
   background-color: #EED3BF;
 }
 
 .tabContents ul li {
-  font-size: 16px;
-  line-height: 1.375;
+  /* font-size: 16px; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
+  line-height: 1.75;
   vertical-align: central;
   text-align: left;
-  padding: 20px;
+  padding: 6vmin 4vw;
 }
 
 .tabContents ul li:nth-child(odd) {
