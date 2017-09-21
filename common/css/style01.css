@@ -132,7 +132,7 @@
 }
 
 .tabMenu li a {
-  /* display: block; */
+  display: block;
   text-align: center;
   font-size: 20px;
   padding-top: 7%;
@@ -144,7 +144,6 @@
 
 .tabMenu li a:hover {
   /* display: block; */
-  /* box-sizing: border-box; */
   color: #737373;
   background: #EED3BF;
   transition: .2s linear;
