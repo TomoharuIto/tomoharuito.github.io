@@ -48,6 +48,18 @@ body * {
   list-style: none;
 }
 
+* img {
+  vertical-align: bottom;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
 ::-moz-selection {
   background: transparent;
   color: #CCCCCC;
@@ -173,18 +185,6 @@ p.langCode {
   background:  transparent;/* rgba(149,246,255,0.55);◀ debug 用 color: Lightblue; */
 }
 
-* img {
-  vertical-align: bottom;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -webkit-touch-callout: none;
-}
-
 /* ================================== */
 /* Translate                          */
 /* ================================== */
@@ -195,7 +195,7 @@ p.langCode {
   top: -8vmin;
   right: 3vmin;
   width: 20vmin;
-  height: auto;
+  height: 10vmin;
 }
 
 #Switch text {
@@ -224,7 +224,7 @@ p.langCode {
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
   letter-spacing: 0.3vw;
-  padding: 6%;
+  padding: 3vmin 0;
   color: #9B9B9B;
   background: rgba(255,255,255,0.10);
 }
@@ -269,18 +269,19 @@ p.langCode {
 }
 
 /* ================================== */
-/* Smartphone's Menu Button           */
+/* Smartphone Menu Button           */
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
   position: fixed;
-  top: 1vmin;
-  right: 1vmin;
+  top: 0.2vmin;
+  right: 0.5vmin;
   display: none;
 }
 
 #Horizontal {
-  width: 15vmin;
+  width: 10vmin;
+  height: 15vmin;
 }
 
 /* ================================== */
@@ -368,7 +369,7 @@ p.langCode {
 
 .Translate {
   top: -8vmin;
-  right: 15vmin;
+  right: 10vmin;
 }
 
 /* ================================== */

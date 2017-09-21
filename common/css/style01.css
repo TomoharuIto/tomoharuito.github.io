@@ -8,12 +8,15 @@
 /* ================================== */
 
 #ABOUT {
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  padding-top: 1vmin;
 }
 
 #INFORMATION {
-  margin-top: -50px;
-  padding-top: 50px;
+  /* margin-top: -50px; */
+  /* padding-top: 50px; */
+  margin-top: -1vmin;
+  padding-top: 1vmin;
 }
 
 /* ================================== */
