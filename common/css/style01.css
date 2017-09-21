@@ -258,6 +258,7 @@
 
 .tabMenu {
   padding-top: 20px;
+  -webkit-tap-hightlight-color: transparent;
 }
 
 .tabMenu li a {
@@ -268,7 +269,6 @@
   width: 50px;
   /* color: #9B9B9B; */
   /* background:#FFF1E5; */
-  -webkit-tap-hightlight-color: transparent;
 }
 
 .tabMenu li a:hover {
