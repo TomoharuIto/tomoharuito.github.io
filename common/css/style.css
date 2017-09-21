@@ -41,7 +41,7 @@ body * {
 
 * a {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /* スマートフォンで画面をタップ時に出る影を無効化 */
+  -webkit-tap-highlight-color: transparent;
 }
 
 * ul {

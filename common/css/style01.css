@@ -132,9 +132,7 @@
 }
 
 .tabMenu li a {
-  display: block;
-  /* box-sizing: border-box; */
-  /* position: relative; */
+  /* display: block; */
   text-align: center;
   font-size: 20px;
   padding-top: 7%;
@@ -145,8 +143,8 @@
 }
 
 .tabMenu li a:hover {
-  display: block;
-  box-sizing: border-box;
+  /* display: block; */
+  /* box-sizing: border-box; */
   color: #737373;
   background: #EED3BF;
   transition: .2s linear;
@@ -162,15 +160,12 @@
 /* ================================== */
 
 .tabContents {
-  /* box-sizing: border-box; */
   min-height: 500px;
   margin-bottom: 5%;
   background-color: #EED3BF;
 }
 
 .tabContents ul li {
-  /* display: block; */
-  /* box-sizing: border-box; */
   font-size: 16px;
   line-height: 1.375;
   vertical-align: central;
@@ -258,17 +253,13 @@
 
 .tabMenu {
   padding-top: 20px;
-  -webkit-tap-hightlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tabMenu li a {
-  /* display: block; */
-  /* position: relative; */
   font-size: 13px;
   height: 30px;
   width: 50px;
-  /* color: #9B9B9B; */
-  /* background:#FFF1E5; */
 }
 
 .tabMenu li a:hover {
@@ -291,8 +282,6 @@
 }
 
 .tabContents ul li:nth-child(odd) {
-  /* display: block; */
-  /* position: relative; */
   text-align: center;
 }
 
