@@ -8,15 +8,15 @@
 /* ================================== */
 
 #ABOUT {
-  /* padding-top: 50px; */
-  padding-top: 1vmin;
+  padding-top: 50px;
+  /* padding-top: 1vmin; */
 }
 
 #INFORMATION {
-  /* margin-top: -50px; */
-  /* padding-top: 50px; */
-  margin-top: -1vmin;
-  padding-top: 1vmin;
+  margin-top: -50px;
+  padding-top: 50px;
+  /* margin-top: -1vmin; */
+  /* padding-top: 1vmin; */
 }
 
 /* ================================== */
@@ -192,11 +192,15 @@
 /* ================================== */
 
 .topBtn {
-  position: fixed;
-  bottom: 2%;
-  right: 3%;
-  width: 8%;
-  height: auto;
+  /* position: fixed; */
+  /* pbottom: 2%; */
+  /* pright: 3%; */
+  /* pwidth: 8%; */
+  /* pheight: auto; */
+  bottom: 2vmin;
+  right: 3vw;
+  width: 8vmin;
+  height: 8vmin;
 }
 
 #Arrow {
@@ -230,9 +234,9 @@
 }
 
 .Profile {
-  max-width: 75%;
+  max-width: 60%;
   height: auto;
-  padding: 2%;
+  padding: 0 2%;
 }
 
 /* ================================== */
@@ -257,14 +261,14 @@
 /* ================================== */
 
 .tabMenu {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   -webkit-tap-highlight-color: transparent;
 }
 
 .tabMenu li a {
-  font-size: 13px;
-  height: 30px;
-  width: 50px;
+  /* font-size: 13px; */
+  /* height: 30px; */
+  /* width: 50px; */
 }
 
 .tabMenu li a:hover {
@@ -295,10 +299,10 @@
 }
 
 .tabContents ul li {
-  padding: 5px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.46;
+  /* padding: 5px; */
+  /* font-size: 13px; */
+  /* font-weight: 700; */
+  /* line-height: 1.46; */
 }
 
 .tabContents ul li time.Time {
@@ -310,9 +314,9 @@
 /* ================================== */
 
 .topBtn {
-  bottom: 30px;
-  right: 10px;
-  width: 50px;
+  /* bottom: 30px; */
+  /* right: 10px; */
+  /* width: 50px; */
 }
 
 }
