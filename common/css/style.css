@@ -17,7 +17,7 @@ body * {
 #pageBody {
   position: relative;
   width: calc(100% * 0.96);
-  margin: 10vmin auto 5vmin;
+  margin: 6vw auto 5vw;
   padding: 2vw;
   box-sizing: border-box;
   perspective-origin: top;
@@ -192,11 +192,10 @@ p.langCode {
 .Translate {
   display: block;
   position: absolute;
-  top: -8vmin;
-  right: 3vmin;
+  top: -5vw;
+  right: 2vw;
   width: 13vw;
-  height: auto;
-  /* height: 10vmin; */
+  height: 7vw;
 }
 
 #Switch text {
@@ -287,8 +286,8 @@ p.langCode {
 
 #wrapper-globalNav .menuBtn {
   position: fixed;
-  top: 0;
-  right: 0.5vmin;
+  top: 0.1vmin;
+  right: 0.7vmin;
   display: none;
 }
 
@@ -440,7 +439,7 @@ p.langCode {
 /* ================================== */
 
 #Horizontal {
-  width: 18vmin;
+  width: 15vmin;
   height: auto;
 }
 
