@@ -366,6 +366,8 @@ p.langCode {
   top: -8vmin;
   right: 18vmin;
   width: 18vmin;
+  width: 16vmin;
+  height: 8vmin;
 }
 
 /* ================================== */
@@ -439,7 +441,7 @@ p.langCode {
 /* ================================== */
 
 #Horizontal {
-  width: 15vmin;
+  width: 13vmin;
   height: auto;
 }
 
