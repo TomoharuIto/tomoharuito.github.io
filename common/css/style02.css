@@ -8,7 +8,7 @@
 /* ================================== */
 
 #PORTFOLIO {
-  padding-top: 30px;
+  padding-top: 5%;
 }
 
 /* ================================== */
@@ -140,20 +140,21 @@
 }
 
 .PicFrames  {
-  display: flex;
+  /* display: flex; */
+  margin: 5vmin 0;
   flex: 0 1 30%;
   position: relative;
-  justify-content: space-around;
-  align-content: space-around;
-  margin: 20px;
-  box-sizing: border-box;
+  /* justify-content: space-around; */
+  /* align-content: space-around; */
+  /* margin: 20px; */
+  /* box-sizing: border-box; */
 }
 
 .PicFrames img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 .caption {
@@ -179,9 +180,9 @@
 
 .topBtn {
   position: fixed;
-  bottom: 2%;
-  right: 3%;
-  width: 8%;
+  bottom: 2vmin;
+  right: 3vw;
+  width: 10vw;
   height: auto;
 }
 
@@ -201,8 +202,8 @@
 /* ================================== */
 
 #PORTFOLIO {
-  margin-top: 60px;
-  padding-top: 0;
+  /* margin-top: 60px; */
+  /* padding-top: 0; */
 }
 
 
@@ -211,9 +212,9 @@
 /* ================================== */
 
 .PicFrames {
-  display: flex;
+  /* display: flex; */
   flex: 0 1 30%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 /*
 .PicFrames  img {
@@ -248,9 +249,7 @@
 /* ================================== */
 
 .topBtn {
-  bottom: 30px;
-  right: 10px;
-  width: 50px;
+  width: 10vh;
 }
 
 }
