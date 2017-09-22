@@ -364,10 +364,9 @@ p.langCode {
 
 .Translate {
   top: -8vmin;
-  right: 18vmin;
-  width: 18vmin;
-  width: 16vmin;
-  height: 8vmin;
+  right: 15vmin;
+  width: 22vmin;
+  height: 11vmin;
 }
 
 /* ================================== */
@@ -441,7 +440,7 @@ p.langCode {
 /* ================================== */
 
 #Horizontal {
-  width: 13vmin;
+  width: 14vmin;
   height: auto;
 }
 
