@@ -9,14 +9,14 @@
 
 #ABOUT {
   /* padding-top: 50px; */
-  padding-top: 3%;
+  padding-top: 7%;
 }
 
 #INFORMATION {
   /* margin-top: -50px; */
   /* padding-top: 50px; */
-  margin-top: -3%;
-  padding-top: 3%;
+  margin-top: -7%;
+  padding-top: 7%;
 }
 
 /* ================================== */
@@ -209,9 +209,14 @@
 /* Headline                           */
 /* ================================== */
 
+/*
 #ABOUT, #INFORMATION {
   margin-top: 30px;
   padding-top: 0;
+}
+*/
+#INFORMATION {
+  margin-top: 0;
 }
 
 /* ================================== */
