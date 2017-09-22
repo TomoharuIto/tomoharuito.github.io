@@ -194,8 +194,9 @@ p.langCode {
   position: absolute;
   top: -8vmin;
   right: 3vmin;
-  width: 20vmin;
-  height: 10vmin;
+  width: 13vw;
+  height: auto;
+  /* height: 10vmin; */
 }
 
 #Switch text {
@@ -269,22 +270,6 @@ p.langCode {
 }
 
 /* ================================== */
-/* Smartphone Menu Button           */
-/* ================================== */
-
-#wrapper-globalNav .menuBtn {
-  position: fixed;
-  top: 0;
-  right: 0.5vmin;
-  display: none;
-}
-
-#Horizontal {
-  width: 10vmin;
-  height: 15vmin;
-}
-
-/* ================================== */
 /* Sticky Bar                         */
 /* ================================== */
 
@@ -294,6 +279,17 @@ p.langCode {
 
 #wrapper-globalNav.fixed {
   width: 91%;
+}
+
+/* ================================== */
+/* Smartphone Menu Button           */
+/* ================================== */
+
+#wrapper-globalNav .menuBtn {
+  position: fixed;
+  top: 0;
+  right: 0.5vmin;
+  display: none;
 }
 
 /* ================================== */
@@ -369,7 +365,8 @@ p.langCode {
 
 .Translate {
   top: -8vmin;
-  right: 10vmin;
+  right: 18vmin;
+  width: 18vmin;
 }
 
 /* ================================== */
@@ -436,6 +433,15 @@ p.langCode {
 
 #wrapper-globalNav.fixed {
   width: 100%;
+}
+
+/* ================================== */
+/* Smartphone Menu Button           */
+/* ================================== */
+
+#Horizontal {
+  width: 18vmin;
+  height: auto;
 }
 
 /* ================================== */
