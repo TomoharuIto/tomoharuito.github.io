@@ -140,21 +140,14 @@
 }
 
 .PicFrames  {
-  /* display: flex; */
   margin: 5vmin 0;
   flex: 0 1 30%;
   position: relative;
-  /* justify-content: space-around; */
-  /* align-content: space-around; */
-  /* margin: 20px; */
-  /* box-sizing: border-box; */
 }
 
 .PicFrames img {
-  /* display: block; */
   max-width: 100%;
   height: auto;
-  /* vertical-align: bottom; */
 }
 
 .caption {
@@ -212,16 +205,8 @@
 /* ================================== */
 
 .PicFrames {
-  /* display: flex; */
   flex: 0 1 30%;
-  /* flex-wrap: wrap; */
 }
-/*
-.PicFrames  img {
-  height: 100%;
-  width: 100%;
-}
-*/
 
 /* ================================== */
 /* SVG                                */
