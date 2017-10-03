@@ -44,7 +44,7 @@ $(function(){
                     text:'CONTACT\nFORM',
                     'font-family':'"Helvetica Neue", Arial, sans-serif',
                     'font-weight':400,
-                    'font-size':'50px',
+                    'font-size':'3rem',
                     fill:'#CCCCCC'
                     }
                   ]);
@@ -71,7 +71,7 @@ $(function(){
                     text:'TREE OF LIFE',
                     'font-family': '"Helvetica Neue", Arial, sans-serif',
                     'font-weight':400,
-                    'font-size':'18px',
+                    'font-size':'1rem',
                     fill:'#fff'
                     }
                   ]);
