@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* CSS for the Gallery page                               */
+/* Gallery page CSS                                       */
 /* ====================================================== */
 
 /* ================================== */
@@ -59,7 +59,7 @@
   position: absolute;
   left: 5%;
   bottom: 45%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   height: 0;
   padding: 5%;
   z-index: 5;
@@ -82,7 +82,7 @@
   position: absolute;
   right: 5%;
   bottom: 45%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   height: 0;
   padding: 5%;
   z-index: 5;
@@ -104,7 +104,7 @@
   position: absolute;
   bottom: 8%;
   right: 2%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   height: 0;
   padding: 3%;
   z-index: 5;
@@ -141,7 +141,7 @@
 
 .PicFrames  {
   margin: 5vmin 0;
-  flex: 0 1 30%;
+  /* flex: 0 1 30%; */
   position: relative;
 }
 
@@ -154,7 +154,7 @@
   display: none;
   position: absolute;
   top: 0;
-  left: -3%; /* ◀ 0だと意図せず右にずれるので */
+  /* left: -3%; */
   width: 100%;
   height: 100%;
   text-align: left;
@@ -162,7 +162,7 @@
   padding: 20% 2%;
   color: rgba(255,241,229,1.00);
   background:rgba(218,223,255,0.80);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   z-index: 2;
   vertical-align: bottom;
 }
