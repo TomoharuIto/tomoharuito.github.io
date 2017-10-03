@@ -42,7 +42,7 @@ $(function(){
                     type:'text',
                     x:135, y:80,
                     text:'CONTACT\nFORM',
-                    'font-family':'Helvetica Neue Thin',
+                    'font-family':'"Helvetica Neue", Arial, sans-serif',
                     'font-weight':400,
                     'font-size':'50px',
                     fill:'#CCCCCC'
@@ -69,7 +69,7 @@ $(function(){
                     type:'text',
                     x:70, y: 195,
                     text:'TREE OF LIFE',
-                    'font-family': 'Helvetica Neue Thin',
+                    'font-family': '"Helvetica Neue", Arial, sans-serif',
                     'font-weight':400,
                     'font-size':'18px',
                     fill:'#fff'

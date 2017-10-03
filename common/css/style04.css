@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* CSS for the Contact page                               */
+/* Contact page CSS                                       */
 /* ====================================================== */
 
 #CONTACT {
@@ -18,7 +18,7 @@
 /* ================================== */
 
 #Mail {
-  width: 275px;
+  width: 75vmin;
   height: auto;
   margin: 2% auto 0;
 }
@@ -53,7 +53,7 @@ flex: initial;
 @media screen and (max-width:700px) {
 
 #Mail {
-  width: 150px;
+  width: 50vmin;
   }
 
 .Post_left img {
