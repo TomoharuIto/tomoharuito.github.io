@@ -1,5 +1,5 @@
 // ======================================================
-// JS for the whole of a Website
+// JS for the whole Website
 // ======================================================
 
 // ==================================
@@ -313,36 +313,22 @@ $(function(){
 $(function(){
 
   var $body = $('body');
-  var $target = $body.find('img').not('.InModal'); // <= .InModal が付いていない<img>要素を取得
+  var $target = $body.find('img').not('.InModal');
   var $wrapper = $('<div></div>');
   $wrapper.addClass('WrapperImg');
-  $target.wrap($wrapper); // <= まず全ての<img>要素を<div>で囲む
-  /*
-  var $BlueWall = $('<div></div>');
-  $BlueWall.addClass('BlueWall');
-  $('.WrapperImg').prepend($BlueWall); // <= ＄BlueWallを<img>要素を囲んだ親<div>要素の先頭に挿入
-  $target
-  .each(function(){
-    var $Previous = $(this).prev('.BlueWall'); // <= ＄Previous は各々の<img>要素の前の<div>要素です
-    $Previous
-    .css({
-      height:'size_h',
-      width:'size_w'
-    });
-  })
-*/
-$target
-  .on('contextmenu', function(){ // <= <img>要素上のみ右クリックメニューが出ない
-    return false;
+  $target.wrap($wrapper);
+
+$target // <img>要素上のみ右クリックメニューが出ない
+  .on('contextmenu', function(){    return false;
   });
-  $body
-  .keydown(function(event){ // <= ctrl + C || ctrl + A key を無効化
-    if((event.ctrlKey === true && event.which === 67) ||
+
+  $body // ctrl + C || ctrl + A key を無効化
+  .keydown(function(event){     if((event.ctrlKey === true && event.which === 67) ||
       (event.ctrlKey === true && event.which === 65)){
       return false;
     }
   })
-  .bind('copy', function(){ // <= Disabling copy
+  .bind('copy', function(){ // Disabling copy
     return false;
   });
 
