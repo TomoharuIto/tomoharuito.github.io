@@ -36,11 +36,8 @@
 /* Image files                        */
 /* ================================== */
 
-.Post_left {
-display: flex;
+.Post_left > .WrapperImg {
 justify-content: flex-end;
-align-items: flex-end;
-flex: initial;
 }
 
 .Post_left img {

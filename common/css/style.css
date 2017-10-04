@@ -363,7 +363,7 @@ p.langCode {
 /* The whole page                     */
 /* ================================== */
 
-  #pageBody {
+#pageBody {
   margin: 11vmin auto 8vmin;
 }
 
@@ -388,7 +388,7 @@ p.langCode {
 /* ================================== */
 
 #wrapper-globalNav .menuBtn {
-    display: block;
+  display: block;
 }
 
 #wrapper-globalNav .menuBtn a {
