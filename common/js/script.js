@@ -328,7 +328,7 @@ $target // <img>要素上のみ右クリックメニューが出ない
       return false;
     }
   })
-  .bind('copy', function(){ // Disabling copy
+  .bind('copy', function(){
     return false;
   });
 

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ====================================================== */
-/* CSS for the 404 Page                                   */
+/* 404 Page CSS                                           */
 /* ====================================================== */
 
 /* ================================== */
@@ -26,8 +26,8 @@ html, body {
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
+  line-height: 1.75;
   vertical-align: bottom;
-  line-height: 1.2;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -114,7 +114,8 @@ html, body {
 
 .Host_on {
   align-self: flex-end;
-  font-size: 3vmin;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
   text-align: right;
 }
 
@@ -127,47 +128,14 @@ html, body {
 }
 
 .Sub-Logo {
-  font-size: 3vmin;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
   line-height: 0.5vmin;
 }
 
 .copyright {
   white-space: nowrap;
-  font-size: 3vmin;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
   text-align: right;
-}
-
-/* ==================== Responsive Web Design ====================> */
-
-/* ==================== When the screen size is 1400px or more ====================> */
-
-@media screen and (min-width:1400px) {
-
-}
-
-/* ==================== When the screen size is 800px or less  ====================> */
-
-@media screen and (max-width:800px) {
-
-/* ================================== */
-/* The whole page                     */
-/* ================================== */
-
-
-/* ================================== */
-/*    Back button                     */
-/* ================================== */
-
-
-}
-
-/* ==================== When the screen size is 600px or less ====================> */
-
-@media screen and (max-width:600px) {
-
-/* ================================== */
-/* The whole page                     */
-/* ================================== */
-
-
 }

@@ -107,14 +107,12 @@
   display: flex;
   flex-flow: row nowrap;
   flex: initial;
-  justify-content: center;
-  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
 }
 
 .Profile {
-  /* max-width: 50%; */
-  /* height: auto; */
-  /* padding:0 5vw; */
+  padding:0 5vw;
 }
 
 /* ================================== */
@@ -206,12 +204,6 @@
 /* Headline                           */
 /* ================================== */
 
-/*
-#ABOUT, #INFORMATION {
-  margin-top: 30px;
-  padding-top: 0;
-}
-*/
 #INFORMATION {
   margin-top: 0;
 }
@@ -228,7 +220,7 @@
 .Profile {
   max-width: 60%;
   height: auto;
-  padding: 0 2%;
+  padding: 0;
 }
 
 /* ================================== */
