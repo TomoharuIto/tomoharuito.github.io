@@ -176,10 +176,10 @@ p.langCode {
   position: relative;
   display: flex;
   align-items: center;
-  jutify-content: center;
+  justify-content: center;
 }
 
-.WrapperImg::after {
+.WrapperImg::before {
   content: "";
   position: absolute;
   top:0;
