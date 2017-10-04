@@ -173,17 +173,28 @@ p.langCode {
 /* ================================== */
 
 .WrapperImg {
-  display: inline-block;
   position: relative;
 }
 
+.WrapperImg::after {
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  background: rgba(149,246,255,0.55);
+  width: 100%;
+  height: 100%;
+}
+
+/*
 .BlueWall {
   position: absolute;
   top: 0;
   left: 0;
   vertical-align: bottom;
-  background:  transparent;/* rgba(149,246,255,0.55);◀ debug 用 color: Lightblue; */
+  background:  transparent;
 }
+*/
 
 /* ================================== */
 /* Translate                          */

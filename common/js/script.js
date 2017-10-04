@@ -314,16 +314,14 @@ $(function(){
 
   var $body = $('body');
   var $target = $body.find('img').not('.InModal'); // <= .InModal が付いていない<img>要素を取得
-/*
   var $wrapper = $('<div></div>');
   $wrapper.addClass('WrapperImg');
   $target.wrap($wrapper); // <= まず全ての<img>要素を<div>で囲む
+  /*
   var $BlueWall = $('<div></div>');
   $BlueWall.addClass('BlueWall');
   $('.WrapperImg').prepend($BlueWall); // <= ＄BlueWallを<img>要素を囲んだ親<div>要素の先頭に挿入
-*/
   $target
-/*
   .each(function(){
     var $Previous = $(this).prev('.BlueWall'); // <= ＄Previous は各々の<img>要素の前の<div>要素です
     $Previous
@@ -332,11 +330,11 @@ $(function(){
       width:'size_w'
     });
   })
-
+*/
+$target
   .on('contextmenu', function(){ // <= <img>要素上のみ右クリックメニューが出ない
     return false;
   });
-*/
   $body
   .keydown(function(event){ // <= ctrl + C || ctrl + A key を無効化
     if((event.ctrlKey === true && event.which === 67) ||
