@@ -112,9 +112,13 @@
 }
 
 .Profile {
+  flex: 0 1 50%;
+  padding:0 5vw;
+}
+
+.Profile img {
   max-width: 50%;
   height: auto;
-  padding:0 5vw;
 }
 
 /* ================================== */
@@ -220,8 +224,7 @@
 }
 
 .Profile {
-  max-width: 60%;
-  height: auto;
+  flex: 0 1 60%;
   padding: 0;
 }
 
@@ -243,7 +246,7 @@
 
 
 /* ================================== */
-/* Horizonal Tab                      */
+/* Horizontal Tab                      */
 /* ================================== */
 
 .tabMenu {
