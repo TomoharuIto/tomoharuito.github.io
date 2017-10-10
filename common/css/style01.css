@@ -111,14 +111,15 @@
   /* align-items: flex-start; */
 }
 
-.Profile {
-  flex: 0 1 50%;
-  padding:0 5vw;
+.side_by_side > .langCode {
+  flex: 0 1 70%;
 }
 
-.Profile img {
-  max-width: 50%;
+.Profile {
+  flex: 0 1 30%;
+  max-width: 100%;
   height: auto;
+  padding:0 2vw;
 }
 
 /* ================================== */
@@ -224,8 +225,8 @@
 }
 
 .Profile {
-  flex: 0 1 60%;
-  padding: 0;
+  padding: 6vmin;
+  max-width: 60%;
 }
 
 /* ================================== */
