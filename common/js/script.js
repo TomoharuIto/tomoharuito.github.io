@@ -311,27 +311,27 @@ $(function(){
 // ==================================
 
 $(function(){
-
   var $body = $('body');
   var $target = $body.find('img').not('.InModal');
+  /*
   var $wrapper = $('<div></div>');
   $wrapper.addClass('WrapperImg');
   $target.wrap($wrapper);
+  */
 
-$target // <img>要素上のみ右クリックメニューが出ない
-  .on('contextmenu', function(){    return false;
+  $target.on('contextmenu', function(e){
+    e.preventDefault();
   });
 
   $body // ctrl + C || ctrl + A key を無効化
-  .keydown(function(event){     if((event.ctrlKey === true && event.which === 67) ||
-      (event.ctrlKey === true && event.which === 65)){
-      return false;
+  .keydown(function(e){     if((e.ctrlKey === true && e.which === 67) ||
+      (e.ctrlKey === true && e.which === 65)){
+      e.preventDefault();
     }
   })
-  .bind('copy', function(){
-    return false;
+  .on('copy cut', function(e){
+    e.preventDefault();
   });
-
 });
 
 // ==================================
