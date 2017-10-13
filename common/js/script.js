@@ -323,7 +323,7 @@ function wallmaria(){
   $("img[name=blank]").remove();
 
   var settings = $.extend({
-    image:'common/images/skyblue.gif',
+    image:'../images/skyblue.gif',
     zIndex:10,
     }, settings);
 
