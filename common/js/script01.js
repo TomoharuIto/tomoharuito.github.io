@@ -6,6 +6,7 @@
 // Slideshow
 // ==================================
 
+/*
 $(function(){
   var intervalId;
   setTimer();
@@ -13,11 +14,10 @@ $(function(){
   function setTimer(){
    intervalId = setInterval(autoClick, 5000);
   }
-/*
   function autoClick(){
    $('.Slide').find('.next a').click();
   }
-*/
+
   function changeImage($click){
     var $current = $click.parent().siblings('figure').children('.MainImage').find('.current');
     var $new;
@@ -47,6 +47,7 @@ $(function(){
   });
 
 });
+*/
 
 // ==================================
 // Tab contents

@@ -319,6 +319,39 @@ $(function(){
   $target.wrap($wrapper);
   */
 
+function wallmaria(){
+  $("img[name=blank]").remove();
+
+  var settings = $.extend({
+    image:'common/images/skyblue.gif',
+    zIndex:10,
+    }, settings);
+
+  $target.each(function(){
+    var $this = $(this);
+    var position = $this.position();
+    var height = $this.height();
+    var width = $this.width();
+    $('<img>').attr({
+      width:width,
+      height:height,
+      src:settings.image,
+      name: "blank"
+      })
+    .css({
+      top: position.top,
+      left: position.left,
+      position: 'absolute',
+      zIndex: settings.zIndex
+      })
+    .appendTo('main')
+    });
+  }
+
+  $(window).on('load resize', function(){
+    wallmaria($target);
+  });
+
   $target.on('contextmenu', function(e){
     e.preventDefault();
   });
@@ -333,11 +366,19 @@ $(function(){
     e.preventDefault();
   });
 
+});
+
 // ----------------------------------
 // Test script
 // ----------------------------------
+/*
+$(function(){
+  });
+*/
+// ----------------------------------
+// End test script
+// ----------------------------------
 
-});
 
 // ==================================
 // Copyright year update automatically
