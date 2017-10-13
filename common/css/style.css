@@ -50,6 +50,7 @@ body * {
 
 * img {
   vertical-align: bottom;
+  pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -62,14 +63,14 @@ body * {
 
 ::-moz-selection {
   background: transparent;
-  color: #CCCCCC;
-  text-shadow: 2rem 2rem 2rem #737373;
+  color: #9B9B9B;
+  text-shadow: 4px 4px 4px #737373;
 }
 
 ::selection {
   background: transparent;
-  color: #CCCCCC;
-  text-shadow: 2rem 2rem 2rem #737373;
+  color: #9B9B9B;
+  text-shadow: 4px 4px 4px #737373;
 }
 
 /* ================================== */
