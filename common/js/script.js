@@ -323,7 +323,7 @@ function wallmaria(){
   $("img[name=blank]").remove();
 
   var settings = $.extend({
-    image:'../images/skyblue.gif',
+    image:'~/common/images/skyblue.gif',
     zIndex:10,
     }, settings);
 
@@ -344,7 +344,7 @@ function wallmaria(){
       position: 'absolute',
       zIndex: settings.zIndex
       })
-    .appendTo('main')
+    .appendTo('main');
     });
   }
 
