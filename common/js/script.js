@@ -314,7 +314,13 @@ $(function(){
   var $body = $('body');
   var $target = $body.find('img').not('.InModal');
   var $wrapper = $('<div></div>');
+  var $Img_height = $target.height();
+  var $Img_width = $target.width();
   $wrapper.addClass('WrapperImg');
+  $('.WrapprImg').css({
+                   'height':'$Img_height',
+                   'width':'$Img_width'
+                 });
   $target.wrap($wrapper);
 
   $target.on('contextmenu', function(e){
