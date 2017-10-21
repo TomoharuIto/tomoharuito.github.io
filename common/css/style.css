@@ -221,11 +221,11 @@ p.langCode {
 /* Global Navigation Bar              */
 /* ================================== */
 
-#wrapper-globalNav {
+#Wrapper_globalNav{
   z-index: 3;
 }
 
-.globalNav {
+.Global_nav{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -234,7 +234,7 @@ p.langCode {
   width: 100%;
 }
 
-.globalNav a {
+.Global_nav a {
   display: block;
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
@@ -272,9 +272,9 @@ p.langCode {
 }
 
 .list {
-  display: none;
-  position: absolute;
-  width: 100%;
+display: none;
+position: absolute;
+width: 100%;
 }
 
 .list > li > a {
@@ -291,7 +291,7 @@ p.langCode {
   position: fixed;
 }
 
-#wrapper-globalNav.fixed {
+#Wrapper_globalNav.fixed {
   width: 91%;
 }
 
@@ -299,11 +299,11 @@ p.langCode {
 /* Smartphone Menu Button           */
 /* ================================== */
 
-#wrapper-globalNav .menuBtn {
+#Wrapper_globalNav.Menu_btn {
   position: fixed;
   top: 0.1vmin;
   right: 0.7vmin;
-  display: none;
+  /* display: none; */
 }
 
 /* ================================== */
@@ -388,15 +388,15 @@ p.langCode {
 /* Global Navigation Bar              */
 /* ================================== */
 
-#wrapper-globalNav .menuBtn {
-  display: block;
+#Wrapper_globalNav.Menu_btn {
+  /* display: block; */
 }
 
-#wrapper-globalNav .menuBtn a {
+#Wrapper_globalNav.Menu_btn a {
   z-index: 1;
 }
 
-.globalNav {
+.Global_nav{
   display: none;
   position: absolute;
   flex-direction: column;
@@ -404,7 +404,7 @@ p.langCode {
   align-items: center;
 }
 
-.globalNav a {
+.Global_nava {
   padding: 3%;
 }
 
@@ -439,19 +439,19 @@ p.langCode {
 }
 
 .list {
-  display: none;
+display: none;
 }
 
 /* ================================== */
 /* Sticky Bar                         */
 /* ================================== */
 
-#wrapper-globalNav.fixed {
+#Wrapper_globalNav.fixed {
   width: 100%;
 }
 
 /* ================================== */
-/* Smartphone Menu Button           */
+/* Smartphone Menu Button             */
 /* ================================== */
 
 #Horizontal {

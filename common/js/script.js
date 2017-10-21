@@ -72,7 +72,7 @@ $(function(){
 // ==================================
 // Smartphone Global navigation Button
 // ==================================
-
+/*
 $(function(){
 
   function mediaDetect(query){
@@ -83,7 +83,7 @@ $(function(){
     }
   }
 
-  var $nav = $('.globalNav');
+  var $nav = $('Global_nav');
   var paper = Raphael('Horizontal', '100%', '100%');
 
   paper.setViewBox(0, 0, 50, 50, true);
@@ -118,7 +118,7 @@ $(function(){
       }, 300);
   });
 
-  $('.menuBtn')
+  $('.Menu_btn')
   .on('click', function(event){
     event.preventDefault();
     if(Raphael.isPointInsideBBox(path.getBBox(false), 4,6)){
@@ -130,6 +130,44 @@ $(function(){
     }
   });
 
+});
+*/
+// ==================================
+// Test script
+// ==================================
+$(function(){
+  var $Nav = $('.Global_nav');
+  var $Switch_point = 736;
+  var $Slide_speed = 500;
+
+  var $Menu_contents = $Nav.html();
+  console.log($Menu_contents);
+  $(window).on('load', function(){
+
+    function Menu_set(){
+      if(window.innerWidth < $Switch_point){
+        if(!($('#Wrap_menuBtn').length)){
+          $('#Wrapper_globalNav').prepend('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div><!-- /.Menu_btn --></div><!-- /#Wrap_menuBtn -->');
+          $('#Wrap_menuBtn').append($Menu_contents);
+
+          var $Menu_list = $('#Wrap_menuBtn > ul');
+          var $Menu_btn = $('.Menu_btn');
+
+          $Menu_btn.on('click', function(){
+            $Menu_list.slideToggle($Slide_speed);
+          });
+        }
+      } else {
+        $('#Wrap_menuBtn').remove();
+      }
+    }
+
+    $(window).on('resize', function(){
+      Menu_set();
+    });
+
+    Menu_set();
+  });
 });
 
 // ==================================
