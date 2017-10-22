@@ -299,7 +299,7 @@ width: 100%;
 /* Smartphone Menu Button           */
 /* ================================== */
 
-#Wrapper_globalNav.Menu_btn {
+.Menu_btn {
   position: fixed;
   top: 0.1vmin;
   right: 0.7vmin;
@@ -388,25 +388,30 @@ width: 100%;
 /* Global Navigation Bar              */
 /* ================================== */
 
-#Wrapper_globalNav.Menu_btn {
-  /* display: block; */
+.Menu_btn {
+display: block;
 }
 
-#Wrapper_globalNav.Menu_btn a {
-  z-index: 1;
+.Menu_btn a {
+z-index: 1;
 }
 
-.Global_nav{
+#Wrapper_globalNav {
   display: none;
-  position: absolute;
-  flex-direction: column;
-  width: calc(100% * 0.94);
-  align-items: center;
 }
 
-.Global_nava {
-  padding: 3%;
+.Global_nav {
+display: none;
+position: absolute;
+flex-direction: column;
+width: calc(100% * 0.94);
+align-items: center;
 }
+
+.Global_nav a {
+padding: 3%;
+}
+
 
 #current > a {
   box-shadow: none;

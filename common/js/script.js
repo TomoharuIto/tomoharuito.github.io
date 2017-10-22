@@ -136,25 +136,56 @@ $(function(){
 // Test script
 // ==================================
 $(function(){
-  var $Nav = $('.Global_nav');
-  var $Switch_point = 736;
-  var $Slide_speed = 500;
 
+  function mediaDetect(query){
+    if(window.matchMedia){
+      return window.matchMedia(query).matches;
+    } else {
+      return false;
+    }
+  }
+
+
+  var $Nav = $('#Wrapper_globalNav');
+//   var $Switch_point = 736;
+//   var $Slide_speed = 500;
   var $Menu_contents = $Nav.html();
-  console.log($Menu_contents);
+
   $(window).on('load', function(){
 
     function Menu_set(){
-      if(window.innerWidth < $Switch_point){
+
+      if(mediaDetect('(max-width:736px)')){
         if(!($('#Wrap_menuBtn').length)){
-          $('#Wrapper_globalNav').prepend('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div><!-- /.Menu_btn --></div><!-- /#Wrap_menuBtn -->');
+          $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div><!-- /.Menu_btn --></div><!-- /#Wrap_menuBtn -->');
           $('#Wrap_menuBtn').append($Menu_contents);
 
-          var $Menu_list = $('#Wrap_menuBtn > ul');
+          var $Menu_list = $('#Wrap_menuBtn ul');
           var $Menu_btn = $('.Menu_btn');
 
-          $Menu_btn.on('click', function(){
-            $Menu_list.slideToggle($Slide_speed);
+          var paper = Raphael('Horizontal', '100%', '100%');
+          paper.setViewBox(0, 0, 50, 50, true);
+          var path1 = 'M44,6 L4,6 M44,16 L4,16 M44,26 L4,26 M44,36 L4,36';
+          var path2 = 'M6,4 L6,44 M16,4 L16,44 M26,4 L26,44 M36,4 L36,44';
+          var path = paper.path(path1).attr({
+            stroke:'rgba(201, 201, 201, 0.50)',
+            'stroke-width':'5',
+            'stroke-linecap':'butt',
+            fill:'none'
+          });
+          var Anim = Raphael.animation({path:path2}, 400, 'linear');
+          var Anim1 = Raphael.animation({path:path1}, 400, 'linear');
+
+          $Menu_btn.on('click', function(e){
+            e.preventDefault();
+            if(Raphael.isPointInsideBBox(path.getBBox(false), 4,6)){
+              path.animate(Anim);
+              $Menu_list.slideDown(400);
+            } else {
+              path.animate(Anim1);
+              $Menu_list.slideUp(400);
+            }
+//             $Menu_list.slideToggle($Slide_speed);
           });
         }
       } else {
