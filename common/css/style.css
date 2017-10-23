@@ -221,11 +221,11 @@ p.langCode {
 /* Global Navigation Bar              */
 /* ================================== */
 
-#Wrapper_globalNav{
+#Wrapper_globalNav {
   z-index: 3;
 }
 
-.Global_nav{
+.Global_nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -291,7 +291,7 @@ width: 100%;
   position: fixed;
 }
 
-#Wrapper_globalNav.fixed {
+.fixed {
   width: 91%;
 }
 
@@ -389,11 +389,11 @@ width: 100%;
 /* ================================== */
 
 .Menu_btn {
-display: block;
+  display: block;
 }
 
 .Menu_btn a {
-z-index: 1;
+  z-index: 1;
 }
 
 #Wrapper_globalNav {
@@ -401,15 +401,15 @@ z-index: 1;
 }
 
 .Global_nav {
-display: none;
-position: absolute;
-flex-direction: column;
-width: calc(100% * 0.94);
-align-items: center;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  width: calc(100% * 0.94);
+  align-items: center;
 }
 
 .Global_nav a {
-padding: 3%;
+  padding: 3%;
 }
 
 
@@ -444,14 +444,14 @@ padding: 3%;
 }
 
 .list {
-display: none;
+  display: none;
 }
 
 /* ================================== */
 /* Sticky Bar                         */
 /* ================================== */
 
-#Wrapper_globalNav.fixed {
+.fixed {
   width: 100%;
 }
 

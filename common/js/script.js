@@ -19,7 +19,7 @@ $(function(){
   var $Drop = $('.dropdownMenu');
 
   $(window).on('load resize', function(){
-    if(mediaDetect('(max-width:600px)')){
+    if(mediaDetect('(max-width:736px)')){
       $Drop
       .off('mouseenter')
       .off('mouseleave');
@@ -105,9 +105,9 @@ $(function(){
       clearTimeout($DelayTimer);
 
       $DelayTimer = setTimeout(function(){
-        if((listFlex === 'row') && (mediaDetect('(min-width:600px)'))){
+        if((listFlex === 'row') && (mediaDetect('(min-width:736px)'))){
           $nav.css('display','flex');
-        } else if((listFlex === 'column') && (mediaDetect('(max-width:600px)'))){
+        } else if((listFlex === 'column') && (mediaDetect('(max-width:736px)'))){
         if($nav.css('display') === 'none'){
           $nav.css('display','none');
         } else if($nav.css('display') === 'flex'){
@@ -147,8 +147,6 @@ $(function(){
 
 
   var $Nav = $('#Wrapper_globalNav');
-//   var $Switch_point = 736;
-//   var $Slide_speed = 500;
   var $Menu_contents = $Nav.html();
 
   $(window).on('load', function(){
@@ -160,7 +158,7 @@ $(function(){
           $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div><!-- /.Menu_btn --></div><!-- /#Wrap_menuBtn -->');
           $('#Wrap_menuBtn').append($Menu_contents);
 
-          var $Menu_list = $('#Wrap_menuBtn ul');
+          var $Menu_list = $('#Wrap_menuBtn > ul');
           var $Menu_btn = $('.Menu_btn');
 
           var paper = Raphael('Horizontal', '100%', '100%');
@@ -230,13 +228,16 @@ $(function(){
     .trigger('customScroll', {posY: scrollValue});
   })
   .on('resize load', function(){
-    if(mediaDetect('(max-width:600px)')){
+    if(mediaDetect('(max-width:736px)')){
+
+      $('.Global_nav').addClass('fixedMenu');
       $Fixed
       .off('customScroll')
       .addClass('fixed')
       .css({top:'60px'})
       .next('.substitute').remove();
     } else {
+      $('.Global_nav').removeClass('fixedMenu');
       $Fixed
       .removeClass('fixed')
       .on('customScroll', function(event, object){
