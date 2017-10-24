@@ -367,27 +367,21 @@ width: 100%;
 /* Global Navigation Bar              */
 /* ================================== */
 
-.Menu_btn {
-  display: block;
-}
-
-.Menu_btn a {
-  z-index: 1;
-}
-
 #Wrapper_globalNav {
   display: none;
 }
 
+#Wrap_menuBtn {
+  z-index: 2;
+}
 
- #Wrap_menuBtn > .Global_nav {
+#Wrap_menuBtn > .Global_nav {
   display: none;
   position: fixed;
   top: 15vmin;
   flex-direction: column;
   width: calc(100% * 0.94);
   align-items: center;
-  z-index: 3;
 }
 
 .Global_nav a {
@@ -434,7 +428,12 @@ width: 100%;
 /* Smartphone Menu Button             */
 /* ================================== */
 
+/* .Menu_btn a { */
+/*   z-index: 1; */
+/* }             */
+
 .Menu_btn {
+  display: block;
   position: fixed;
   top: 0.1vmin;
   right: 0.7vmin;

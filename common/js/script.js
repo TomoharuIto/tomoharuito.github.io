@@ -92,7 +92,7 @@ $(function(){
 
       if(mediaDetect('(max-width:736px)')){
         if(!($('#Wrap_menuBtn').length)){
-          $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div><!-- /.Menu_btn --></div><!-- /#Wrap_menuBtn -->');
+          $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div></div>');
           $('#Wrap_menuBtn').append($Menu_contents);
 
           var $Menu_list = $('#Wrap_menuBtn > ul');
