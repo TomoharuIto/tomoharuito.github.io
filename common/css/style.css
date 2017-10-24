@@ -400,12 +400,14 @@ width: 100%;
   display: none;
 }
 
-.Global_nav {
+
+ #Wrap_menuBtn > .Global_nav {
   display: none;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   width: calc(100% * 0.94);
   align-items: center;
+  z-index: 5;
 }
 
 .Global_nav a {

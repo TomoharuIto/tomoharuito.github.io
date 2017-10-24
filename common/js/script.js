@@ -183,7 +183,6 @@ $(function(){
               path.animate(Anim1);
               $Menu_list.slideUp(400);
             }
-//             $Menu_list.slideToggle($Slide_speed);
           });
         }
       } else {
@@ -230,14 +229,14 @@ $(function(){
   .on('resize load', function(){
     if(mediaDetect('(max-width:736px)')){
 
-      $('.Global_nav').addClass('fixedMenu');
+      // $('.Global_nav').addClass('fixedMenu');
       $Fixed
       .off('customScroll')
       .addClass('fixed')
       .css({top:'60px'})
       .next('.substitute').remove();
     } else {
-      $('.Global_nav').removeClass('fixedMenu');
+      // $('.Global_nav').removeClass('fixedMenu');
       $Fixed
       .removeClass('fixed')
       .on('customScroll', function(event, object){
