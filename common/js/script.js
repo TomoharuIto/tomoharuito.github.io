@@ -229,14 +229,12 @@ $(function(){
   .on('resize load', function(){
     if(mediaDetect('(max-width:736px)')){
 
-      // $('.Global_nav').addClass('fixedMenu');
       $Fixed
       .off('customScroll')
-      .addClass('fixed')
-      .css({top:'60px'})
+//      .addClass('fixed')
+//      .css({top:'60px'})
       .next('.substitute').remove();
     } else {
-      // $('.Global_nav').removeClass('fixedMenu');
       $Fixed
       .removeClass('fixed')
       .on('customScroll', function(event, object){
