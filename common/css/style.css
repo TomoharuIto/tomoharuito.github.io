@@ -383,7 +383,7 @@ width: 100%;
 .Global_nav a {
   padding: 3%;
   font-weight: bold;
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -433,7 +433,7 @@ width: 100%;
 }
 
 .Menu_btn a {
-z-index: 3;
+z-index: 4;
 }
 
 #Horizontal {
