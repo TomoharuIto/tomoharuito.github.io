@@ -82,14 +82,12 @@ $(function(){
     }
   }
 
-
   var $Nav = $('#Wrapper_globalNav');
   var $Menu_contents = $Nav.html();
 
   $(window).on('load', function(){
 
     function Menu_set(){
-
       if(mediaDetect('(max-width:736px)')){
         if(!($('#Wrap_menuBtn').length)){
           $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div></div>');
@@ -97,7 +95,6 @@ $(function(){
 
           var $Menu_list = $('#Wrap_menuBtn > ul');
           var $Menu_btn = $('.Menu_btn');
-
           var paper = Raphael('Horizontal', '100%', '100%');
           paper.setViewBox(0, 0, 50, 50, true);
           var path1 = 'M44,6 L4,6 M44,16 L4,16 M44,26 L4,26 M44,36 L4,36';

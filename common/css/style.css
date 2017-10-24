@@ -371,10 +371,6 @@ width: 100%;
   display: none;
 }
 
-#Wrap_menuBtn {
-  z-index: 2;
-}
-
 #Wrap_menuBtn > .Global_nav {
   display: none;
   position: fixed;
@@ -387,6 +383,7 @@ width: 100%;
 .Global_nav a {
   padding: 3%;
   font-weight: bold;
+  z-index: 2;
 }
 
 
@@ -428,15 +425,15 @@ width: 100%;
 /* Smartphone Menu Button             */
 /* ================================== */
 
-/* .Menu_btn a { */
-/*   z-index: 1; */
-/* }             */
-
 .Menu_btn {
   display: block;
   position: fixed;
   top: 0.1vmin;
   right: 0.7vmin;
+}
+
+.Menu_btn a {
+z-index: 3;
 }
 
 #Horizontal {
