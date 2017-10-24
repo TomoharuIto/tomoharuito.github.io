@@ -158,7 +158,7 @@ $(function(){
   });
 
   $(window)
-  .on('scroll', function(){
+  .on('scroll touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed
     .trigger('customScroll', {posY: scrollValue});
