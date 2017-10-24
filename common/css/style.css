@@ -190,16 +190,6 @@ p.langCode {
   height: 100%;
 }
 
-/*
-.BlueWall {
-  position: absolute;
-  top: 0;
-  left: 0;
-  vertical-align: bottom;
-  background:  transparent;
-}
-*/
-
 /* ================================== */
 /* Translate                          */
 /* ================================== */
@@ -292,18 +282,7 @@ width: 100%;
 }
 
 .fixed {
-  width: 91%;
-}
-
-/* ================================== */
-/* Smartphone Menu Button           */
-/* ================================== */
-
-.Menu_btn {
-  position: fixed;
-  top: 0.1vmin;
-  right: 0.7vmin;
-  /* display: none; */
+  width: 92%;
 }
 
 /* ================================== */
@@ -452,16 +431,14 @@ width: 100%;
 }
 
 /* ================================== */
-/* Sticky Bar                         */
-/* ================================== */
-
-/*.fixed {
-/*  width: 100%;
-/*}
-
-/* ================================== */
 /* Smartphone Menu Button             */
 /* ================================== */
+
+.Menu_btn {
+  position: fixed;
+  top: 0.1vmin;
+  right: 0.7vmin;
+}
 
 #Horizontal {
   width: 14vmin;

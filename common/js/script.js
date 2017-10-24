@@ -70,70 +70,7 @@ $(function(){
 });
 
 // ==================================
-// Smartphone Global navigation Button
-// ==================================
-/*
-$(function(){
-
-  function mediaDetect(query){
-    if(window.matchMedia){
-      return window.matchMedia(query).matches;
-    } else {
-      return false;
-    }
-  }
-
-  var $nav = $('Global_nav');
-  var paper = Raphael('Horizontal', '100%', '100%');
-
-  paper.setViewBox(0, 0, 50, 50, true);
-  var path1 = 'M44,6 L4,6 M44,16 L4,16 M44,26 L4,26 M44,36 L4,36';
-  var path2 = ' M6,4 L6,44 M16,4 L16,44 M26,4 L26,44 M36,4 L36,44';
-  var path = paper.path(path1).attr({
-                                stroke:'rgba(201, 201, 201, 0.50)',
-                                'stroke-width':'5',
-                                'stroke-linecap':'butt',
-                                fill:'none'
-                              });
-  var Anim = Raphael.animation({path:path2}, 400, 'linear');
-  var Anim1 = Raphael.animation({path:path1}, 400, 'linear');
-
-  $(window)
-  .on('resize', function(){
-      var listFlex= $nav.css('flex-direction');
-      var $DelayTimer;
-      clearTimeout($DelayTimer);
-
-      $DelayTimer = setTimeout(function(){
-        if((listFlex === 'row') && (mediaDetect('(min-width:736px)'))){
-          $nav.css('display','flex');
-        } else if((listFlex === 'column') && (mediaDetect('(max-width:736px)'))){
-        if($nav.css('display') === 'none'){
-          $nav.css('display','none');
-        } else if($nav.css('display') === 'flex'){
-          $nav.css('display','flex');
-          path.animate(Anim);
-        }
-        }
-      }, 300);
-  });
-
-  $('.Menu_btn')
-  .on('click', function(event){
-    event.preventDefault();
-    if(Raphael.isPointInsideBBox(path.getBBox(false), 4,6)){
-      path.animate(Anim);
-      $nav.slideDown(400);
-    } else {
-      path.animate(Anim1);
-      $nav.slideUp(400);
-    }
-  });
-
-});
-*/
-// ==================================
-// Test script
+// Responsive global navigation bar
 // ==================================
 $(function(){
 
@@ -231,8 +168,6 @@ $(function(){
 
       $Fixed
       .off('customScroll')
-//      .addClass('fixed')
-//      .css({top:'60px'})
       .next('.substitute').remove();
     } else {
       $Fixed
