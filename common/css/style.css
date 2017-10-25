@@ -378,12 +378,12 @@ width: 100%;
   flex-direction: column;
   width: calc(100% * 0.94);
   align-items: center;
+  z-index: 2;
 }
 
 .Global_nav a {
   padding: 3%;
   font-weight: bold;
-  z-index: 3;
 }
 
 
@@ -430,10 +430,7 @@ width: 100%;
   position: fixed;
   top: 0.1vmin;
   right: 0.7vmin;
-}
-
-.Menu_btn a {
-z-index: 4;
+  z-index: 2;
 }
 
 #Horizontal {
