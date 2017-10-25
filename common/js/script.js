@@ -327,7 +327,7 @@ $(function(){
   .on('contextmenu', function(e){
      e.preventDefault();
    });
-
+/*
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Win") != -1){  //test
@@ -345,30 +345,37 @@ $(function(){
   });
 
 });
-
+*/
 // ==================================
 // Test script
 // ==================================
 
-$(function(e){
+$(function(){
+
+  var $body = $('body');
+
   if(navigator.platform.indexOf("Win") != -1){
-    console.log('Hello, Windows!');
-    if(e.ctrlKey === true && e.which === 65){
-      console.log("Hi, I'm 'A'");
-    } else if(e.ctrlKey === true && e.which === 67){
-      console.log("Hi, I'm 'C'");
-    } else if(e.ctrlKey === true && e.which === 88){
-      console.log("Hi, I'm 'X'");
-    }
+    $body.keydown(function(e){
+        console.log('Hello, Windows!');
+      if(e.ctrlKey === true && e.which === 65){
+        console.log("Hi, I'm 'A'");
+      } else if(e.ctrlKey === true && e.which === 67){
+        console.log("Hi, I'm 'C'");
+      } else if(e.ctrlKey === true && e.which === 88){
+        console.log("Hi, I'm 'X'");
+      }
+    });
   } else if(navigator.platform.indexOf("Mac") != -1){
-    console.log('Hello, Mac!');
-    if(e.metaKey === true && e.which === 229){
-      console.log("Hi, I'm 'A'");
-    } else if(e.metaKey === true && e.which === 67){
-      console.log("Hi, I'm 'C'");
-    } else if(e.metaKey === true && e.which === 88){
-      console.log("Hi, I'm 'X'");
-    }
+      console.log('Hello, Mac!');
+      $body.keydown(function(e){
+      if(e.metaKey === true && e.which === 229){
+        console.log("Hi, I'm 'A'");
+      } else if(e.metaKey === true && e.which === 67){
+        console.log("Hi, I'm 'C'");
+      } else if(e.metaKey === true && e.which === 88){
+        console.log("Hi, I'm 'X'");
+      }
+    });
   }
 });
 
