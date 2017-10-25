@@ -157,7 +157,8 @@ $(function(){
 
   $('body').bind('touchmove', function(){
     var scrollValue = $(this).scrollTop();
-    $Fixed.trigger('customScroll', {posY: scrollValue});
+    $Fixed.trigger('customScroll', {posY: scrollValue})
+    .next('.substitute').remove();
   });
 
   $(window)
@@ -178,7 +179,7 @@ $(function(){
       .on('customScroll', function(event, object){
 
       var $this = $(this);
-        if($this.data('initial') <= object.posY && !event.document.createEvent('TouchEvent')){
+        if($this.data('initial') <= object.posY){
           if(!$this.hasClass('fixed')){
             var $substitute = $('<div></div>');
             $substitute
