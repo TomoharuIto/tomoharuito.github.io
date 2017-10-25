@@ -156,7 +156,7 @@ $(function(){
   });
 
 // Test
-  $(body).bind('touchmove', function(){
+  $('body').bind('touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed.trigger('customScroll', {posY: scrollValue});
   });
