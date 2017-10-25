@@ -155,15 +155,13 @@ $(function(){
     $this.data('initial', $this.offset().top);
   });
 
-/*
   $('body').bind('touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed.trigger('customScroll', {posY: scrollValue});
   });
-*/
 
-  $(window, 'body')
-  .on('scroll touchmove', function(){
+  $(window)
+  .on('scroll', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed
     .trigger('customScroll', {posY: scrollValue});
