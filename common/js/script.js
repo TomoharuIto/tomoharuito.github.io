@@ -153,20 +153,8 @@ $(function(){
   .each(function(){
     var $this = $(this);
     $this.data('initial', $this.offset().top);
-    try{
-      event = document.createEvent('TouchEvent');
-      $this
-      .next('.substitute').remove();
-    } catch(err) {
-    }
   });
-/*
-  $('body').bind('touchmove', function(){
-    var scrollValue = $(this).scrollTop();
-    $Fixed.trigger('customScroll', {posY: scrollValue})
-    .next('.substitute').remove();
-  });
-*/
+
   $(window)
   .on('scroll', function(){
     var scrollValue = $(this).scrollTop();
