@@ -386,13 +386,11 @@ width: 100%;
   font-weight: bold;
 }
 
-
 #current > a {
   box-shadow: none;
   background:  rgba(201, 201, 201, 0.50);
   color: #FCFCFC;
 }
-
 
 .dropdownMenu {
   position: relative;

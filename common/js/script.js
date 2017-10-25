@@ -155,8 +155,15 @@ $(function(){
     $this.data('initial', $this.offset().top);
   });
 
+// Test
+  $(body).bind('touchmove', function(){
+    var scrollValue = $(this).scrollTop();
+    $Fixed.trigger('customScroll', {posY: scrollValue});
+  });
+// End test
+
   $(window)
-  .on('scroll touchmove', function(){
+  .on('scroll', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed
     .trigger('customScroll', {posY: scrollValue});
@@ -322,15 +329,31 @@ $(function(){
    });
 
   $body // ctrl + C || ctrl + A key を無効化
-  .keydown(function(e){     if((e.ctrlKey === true && e.which === 67) ||
-      (e.ctrlKey === true && e.which === 65)){
-      e.preventDefault();
-    }
+  .keydown(function(e){
+    if(navigator.platform.indexOf("Win") != -1){  //test
+      if((e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 65)){
+        e.preventDefault();
+      } else if(navigator.platform.indexOf("Mac") != -1){  //test
+
+      }  //test
+    }  //test
   })
   .on('copy cut', function(e){
     e.preventDefault();
   });
 
+});
+
+// ==================================
+// Test script
+// ==================================
+
+$(function(){
+  if(navigator.platform.indexOf("Win") != -1){
+    console.log('Hello, Windows !');
+  } else if(navigator.platform.indexOf("Mac") != -1){
+    console.log('Hello, Mac !');
+  }
 });
 
 // ==================================
