@@ -331,7 +331,7 @@ $(function(){
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Win") != -1){  //test
-      if((e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 65)){
+      if((e.ctrlKey === true && e.which === 65) || (e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 88)){
         e.preventDefault();
       } else if(navigator.platform.indexOf("Mac") != -1){  //test
         if((e.metaKey === true && e.which === 229) || (e.metaKey === true && e.which === 67) || (e.metaKey === true && e.which === 88)){
@@ -350,11 +350,25 @@ $(function(){
 // Test script
 // ==================================
 
-$(function(){
+$(function(e){
   if(navigator.platform.indexOf("Win") != -1){
     console.log('Hello, Windows!');
+    if(e.ctrlKey === true && e.which === 65){
+      console.log("Hi, I'm 'A'");
+    } else if(e.ctrlKey === true && e.which === 67){
+      console.log("Hi, I'm 'C'");
+    } else if(e.ctrlKey === true && e.which === 88){
+      console.log("Hi, I'm 'X'");
+    }
   } else if(navigator.platform.indexOf("Mac") != -1){
     console.log('Hello, Mac!');
+    if(e.metaKey === true && e.which === 229){
+      console.log("Hi, I'm 'A'");
+    } else if(e.metaKey === true && e.which === 67){
+      console.log("Hi, I'm 'C'");
+    } else if(e.metaKey === true && e.which === 88){
+      console.log("Hi, I'm 'X'");
+    }
   }
 });
 
