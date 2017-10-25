@@ -328,15 +328,17 @@ $(function(){
      e.preventDefault();
    });
 
-  $body // ctrl + C || ctrl + A key を無効化
+  $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Win") != -1){  //test
       if((e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 65)){
         e.preventDefault();
       } else if(navigator.platform.indexOf("Mac") != -1){  //test
-
+        if((e.metaKey === true && e.which === 229) || (e.metaKey === true && e.which === 67) || (e.metaKey === true && e.which === 88)){
+          e.preventDefault();
+        }
       }  //test
-    }  //test
+    }
   })
   .on('copy cut', function(e){
     e.preventDefault();
@@ -350,9 +352,9 @@ $(function(){
 
 $(function(){
   if(navigator.platform.indexOf("Win") != -1){
-    console.log('Hello, Windows !');
+    console.log('Hello, Windows!');
   } else if(navigator.platform.indexOf("Mac") != -1){
-    console.log('Hello, Mac !');
+    console.log('Hello, Mac!');
   }
 });
 
