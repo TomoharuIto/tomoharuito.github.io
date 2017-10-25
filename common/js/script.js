@@ -155,15 +155,15 @@ $(function(){
     $this.data('initial', $this.offset().top);
   });
 
-// Test
+/*
   $('body').bind('touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed.trigger('customScroll', {posY: scrollValue});
   });
-// End test
+*/
 
-  $(window)
-  .on('scroll', function(){
+  $(window, 'body')
+  .on('scroll touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed
     .trigger('customScroll', {posY: scrollValue});
@@ -180,24 +180,27 @@ $(function(){
       .on('customScroll', function(event, object){
 
         var $this = $(this);
-
-        if($this.data('initial') <= object.posY) {
-          if(!$this.hasClass('fixed')){
-            var $substitute = $('<div></div>');
-            $substitute
-            .css({
-              'width':'auto',
-              'height':($this.outerHeight(true))
-            })
-            .addClass('substitute');
-            $this
-            .after($substitute)
-            .addClass('fixed')
-            .css({top:0});
+        try {
+          event = document.createEvent('TouchEvent');
+        } catch(err) {
+          if($this.data('initial') <= object.posY) {
+            if(!$this.hasClass('fixed')){
+              var $substitute = $('<div></div>');
+              $substitute
+              .css({
+                'width':'auto',
+                'height':($this.outerHeight(true))
+              })
+              .addClass('substitute');
+              $this
+              .after($substitute)
+              .addClass('fixed')
+              .css({top:0});
+            }
+          } else {
+            $this.removeClass('fixed')
+            .next('.substitute').remove();
           }
-        } else {
-          $this.removeClass('fixed')
-          .next('.substitute').remove();
         }
       });
     }
