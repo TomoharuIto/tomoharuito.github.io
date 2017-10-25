@@ -154,13 +154,14 @@ $(function(){
     var $this = $(this);
     $this.data('initial', $this.offset().top);
   });
-
+  try {
+    event = document.createEvent('TouchEvent');
   $('body').bind('touchmove', function(){
     var scrollValue = $(this).scrollTop();
     $Fixed.trigger('customScroll', {posY: scrollValue})
     .next('.substitute').remove();
   });
-
+  } catch(err) {
   $(window)
   .on('scroll', function(){
     var scrollValue = $(this).scrollTop();
@@ -200,6 +201,7 @@ $(function(){
       });
     }
   });
+  }
 });
 
 // ==================================
