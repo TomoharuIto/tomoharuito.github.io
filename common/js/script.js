@@ -318,16 +318,23 @@ $(function(){
   $target.wrap($wrapper)
   .on('contextmenu', function(e){
      e.preventDefault();
-   });
-/*
+   })
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
-      if((e.metaKey === true && e.which === 229) || (e.metaKey === true && e.which === 67) || (e.metaKey === true && e.which === 88)){
+      console.log('Hello, Mac!');
+      if((e.metaKey === true && e.which === 65) ||
+         (e.metaKey === true && e.which === 67) ||
+         (e.metaKey === true && e.which === 88)){
         e.preventDefault();
-      } else if(navigator.platform.indexOf("Win") != -1){
-          if((e.ctrlKey === true && e.which === 65) || (e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 88)){
+        console.log('Say cheese!');
+      } else {
+          console.log('Hello, Windows or Linux!');
+          if((e.ctrlKey === true && e.which === 65) ||
+             (e.ctrlKey === true && e.which === 67) ||
+             (e.ctrlKey === true && e.which === 88)){
             e.preventDefault();
+            console.log('Say cheese!');
         }
       }
     }
@@ -335,12 +342,13 @@ $(function(){
   .on('copy cut', function(e){
     e.preventDefault();
   });
-*/
 });
+
 // ==================================
 // Test script
 // ==================================
 
+/*
 $(function(){
 
   var $body = $('body');
@@ -348,7 +356,7 @@ $(function(){
   if(navigator.platform.indexOf("Mac") != -1){
       console.log('Hello, Mac!');
       $body.keydown(function(e){
-        if(e.metaKey === true && e.which === 229){
+        if(e.metaKey === true && e.which === 65){
           console.log("Hi, I'm 'A'");
         } else if(e.metaKey === true && e.which === 67){
           console.log("Hi, I'm 'C'");
@@ -357,7 +365,7 @@ $(function(){
         }
     });
   } else {
-      console.log('Hello, Windows!');
+      console.log('Hello, Windows or Linux!');
       $body.keydown(function(e){
         if(e.ctrlKey === true && e.which === 65){
           console.log("Hi, I'm 'A'");
@@ -369,6 +377,7 @@ $(function(){
     });
    }
 });
+*/
 
 // ==================================
 // Copyright year update automatically
