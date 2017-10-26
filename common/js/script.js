@@ -318,7 +318,8 @@ $(function(){
   $target.wrap($wrapper)
   .on('contextmenu', function(e){
      e.preventDefault();
-   })
+   });
+
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
