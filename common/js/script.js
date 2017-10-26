@@ -319,7 +319,7 @@ $(function(){
   .on('contextmenu', function(e){
      e.preventDefault();
    });
-/*
+
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
@@ -343,12 +343,13 @@ $(function(){
   .on('copy cut', function(e){
     e.preventDefault();
   });
-*/
 });
+
 // ==================================
 // Test script
 // ==================================
 
+/*
 $(function(){
 
   var $body = $('body');
@@ -377,6 +378,7 @@ $(function(){
     });
    }
 });
+*/
 
 // ==================================
 // Copyright year update automatically
