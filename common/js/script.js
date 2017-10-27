@@ -151,10 +151,15 @@ $(function(){
   var $Menu_top = $Sticky.offset().top;
 
   $(window).on('load scroll resize', function(){
-    if($(window).scrollTop() > $Menu_top){
-      $Sticky.css({top:'0',position:'fixed',width:'92%'});
+
+    if(medeaDetect('(max-width:736px)')){
+
     } else {
-      $Sticky.css({top:'auto',position:'relative'});
+      if($(window).scrollTop() > $Menu_top){
+        $Sticky.css({top:'0',position:'fixed',width:'92%'});
+      } else {
+        $Sticky.css({top:'auto',position:'relative',width:'100%'});
+      }
     }
   });
 
