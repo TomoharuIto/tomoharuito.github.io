@@ -72,6 +72,7 @@ $(function(){
 // ==================================
 // Responsive global navigation bar
 // ==================================
+
 $(function(){
 
   function mediaDetect(query){
@@ -334,10 +335,23 @@ $(function(){
   var $wrapper = $('<div></div>');
   $wrapper.addClass('WrapperImg');
 
+// Test script
+  function Preload_img(path){
+    $target.attr('src', path);
+  }
+// End test script
+
   $target.wrap($wrapper)
   .on('contextmenu', function(e){
      e.preventDefault();
-   });
+   })
+
+// Test script
+  .each(function(){
+    var Img_data = $(this).data('behind');
+    Preload_img(Img_data);
+  });
+// End test script
 
   $body
   .keydown(function(e){
