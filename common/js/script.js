@@ -152,7 +152,7 @@ $(function(){
 
   $(window).on('load scroll resize', function(){
 
-    if(medeaDetect('(max-width:736px)')){
+    if(mediaDetect('(max-width:736px)')){
 
     } else {
       if($(window).scrollTop() > $Menu_top){
