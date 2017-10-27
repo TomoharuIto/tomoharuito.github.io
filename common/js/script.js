@@ -147,6 +147,18 @@ $(function(){
     }
   }
 
+  var $Sticky = $('#Wrapper_globalNav');
+  var $Menu_top = $Sticky.offset().top;
+
+  $(window).on('load scroll resize', function(){
+    if($(window).scrollTop() > $Menu_top){
+      $Sticky.css({top:'0',position:'fixed'});
+    } else {
+      $Sticky.css({top:'auto',position:'static'});
+    }
+  });
+
+/*
   var $Fixed = $('.fixedMenu');
 
   $Fixed
@@ -194,6 +206,7 @@ $(function(){
       });
     }
   });
+*/
 });
 
 // ==================================
