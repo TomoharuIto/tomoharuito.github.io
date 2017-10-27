@@ -323,14 +323,12 @@ $(function(){
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
-      console.log('Hello, Mac!');
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
          (e.metaKey === true && e.which === 88)){
         e.preventDefault();
         console.log('Say cheese!');
       } else {
-          console.log('Hello, Windows or Linux!');
           if((e.ctrlKey === true && e.which === 65) ||
              (e.ctrlKey === true && e.which === 67) ||
              (e.ctrlKey === true && e.which === 88)){
