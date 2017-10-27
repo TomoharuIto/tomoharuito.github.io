@@ -323,15 +323,11 @@ $(function(){
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
-      if((e.metaKey === true && e.which === 65) ||
-         (e.metaKey === true && e.which === 67) ||
-         (e.metaKey === true && e.which === 88)){
+      if((e.metaKey === true && e.which === 65) || (e.metaKey === true && e.which === 67) || (e.metaKey === true && e.which === 88)){
         e.preventDefault();
         console.log('Say cheese!');
       } else {
-          if((e.ctrlKey === true && e.which === 65) ||
-             (e.ctrlKey === true && e.which === 67) ||
-             (e.ctrlKey === true && e.which === 88)){
+          if((e.ctrlKey === true && e.which === 65) || (e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 88)){
             e.preventDefault();
             console.log('Say cheese!');
         }
