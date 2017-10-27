@@ -152,7 +152,7 @@ $(function(){
 
   $(window).on('load scroll resize', function(){
     if($(window).scrollTop() > $Menu_top){
-      $Sticky.css({top:'0',position:'fixed'});
+      $Sticky.css({top:'0',position:'fixed',width:'92%'});
     } else {
       $Sticky.css({top:'auto',position:'static'});
     }
