@@ -186,56 +186,6 @@ $(function(){
 
 });
 
-/*
-  var $Fixed = $('.fixedMenu');
-
-  $Fixed
-  .each(function(){
-    var $this = $(this);
-    $this.data('initial', $this.offset().top);
-  });
-
-  $(window)
-  .on('scroll', function(){
-    var scrollValue = $(this).scrollTop();
-    $Fixed
-    .trigger('customScroll', {posY: scrollValue});
-  })
-  .on('resize load', function(){
-    if(mediaDetect('(max-width:736px)')){
-
-      $Fixed
-      .off('customScroll')
-      .next('.substitute').remove();
-    } else {
-      $Fixed
-      .removeClass('fixed')
-      .on('customScroll', function(event, object){
-
-      var $this = $(this);
-        if($this.data('initial') <= object.posY){
-          if(!$this.hasClass('fixed')){
-            var $substitute = $('<div></div>');
-            $substitute
-            .css({
-              'width':'auto',
-              'height':($this.outerHeight(true))
-            })
-            .addClass('substitute');
-            $this
-            .after($substitute)
-            .addClass('fixed')
-            .css({top:0});
-          }
-        } else {
-          $this.removeClass('fixed')
-          .next('.substitute').remove();
-        }
-      });
-    }
-  });
-*/
-
 // ==================================
 // Translate
 // ==================================
