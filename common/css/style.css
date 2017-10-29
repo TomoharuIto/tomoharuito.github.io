@@ -29,6 +29,10 @@ body * {
   border-image-repeat: stretch;
   }
 
+  #pageMain {
+  padding-top: 6%;
+}
+
 * h1, * h2, * p, * li, * a, * time, * small, * text, #year {
   font-family: "Helvetica Neue", Arial, "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: normal;
@@ -213,6 +217,7 @@ p.langCode {
 
 #Wrapper_globalNav {
   z-index: 3;
+  margin-bottom: -6%;
 }
 
 .Global_nav {
@@ -230,7 +235,7 @@ p.langCode {
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
   letter-spacing: 0.3vw;
   padding: 6%;
-  color: #9B9B9B;
+  /* color: #9B9B9B; */
   background: rgba(255,255,255,0.10);
 }
 

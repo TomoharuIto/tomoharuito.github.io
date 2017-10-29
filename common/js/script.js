@@ -157,9 +157,19 @@ $(function(){
       //Do_nothing
     } else {
       if($(window).scrollTop() > $Menu_top){
-        $Sticky_nav.css({top:'0',position:'fixed',width:'92%'});
+        $Sticky_nav
+          .css({
+            'top':'0',
+            'position':'fixed',
+            'width':'92%',
+          });
       } else {
-        $Sticky_nav.css({top:'auto',position:'relative',width:'100%'});
+        $Sticky_nav
+          .css({
+            'top':'auto',
+            'position':'relative',
+            'width':'100%',
+          });
       }
     }
   });
@@ -353,17 +363,25 @@ $(function(){
   });
 // End test script
 
+  if(navigator.platform.indexOf("Mac") != -1){
+      console.log('Hello, Mac!');
+  } else {
+      console.log('Hello, Windows or Linux!');
+        }
+
   $body
   .keydown(function(e){
     if(navigator.platform.indexOf("Mac") != -1){
-      if((e.metaKey === true && e.which === 65) || (e.metaKey === true && e.which === 67) || (e.metaKey === true && e.which === 88)){
+      if((e.metaKey === true && e.which === 65) ||
+         (e.metaKey === true && e.which === 67) ||
+         (e.metaKey === true && e.which === 88)){
         e.preventDefault();
-        console.log('Say cheese!');
       }
     } else {
-        if((e.ctrlKey === true && e.which === 65) || (e.ctrlKey === true && e.which === 67) || (e.ctrlKey === true && e.which === 88)){
+        if((e.ctrlKey === true && e.which === 65) ||
+           (e.ctrlKey === true && e.which === 67) ||
+           (e.ctrlKey === true && e.which === 88)){
           e.preventDefault();
-          console.log('Say cheese!');
       }
     }
   })
@@ -371,41 +389,6 @@ $(function(){
     e.preventDefault();
   });
 });
-
-// ==================================
-// Test script
-// ==================================
-
-/*
-$(function(){
-
-  var $body = $('body');
-
-  if(navigator.platform.indexOf("Mac") != -1){
-      console.log('Hello, Mac!');
-      $body.keydown(function(e){
-        if(e.metaKey === true && e.which === 65){
-          console.log("Hi, I'm 'A'");
-        } else if(e.metaKey === true && e.which === 67){
-          console.log("Hi, I'm 'C'");
-        } else if(e.metaKey === true && e.which === 88){
-          console.log("Hi, I'm 'X'");
-        }
-    });
-  } else {
-      console.log('Hello, Windows or Linux!');
-      $body.keydown(function(e){
-        if(e.ctrlKey === true && e.which === 65){
-          console.log("Hi, I'm 'A'");
-        } else if(e.ctrlKey === true && e.which === 67){
-          console.log("Hi, I'm 'C'");
-        } else if(e.ctrlKey === true && e.which === 88){
-          console.log("Hi, I'm 'X'");
-        }
-    });
-   }
-});
-*/
 
 // ==================================
 // Copyright year update automatically
