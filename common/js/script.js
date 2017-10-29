@@ -155,7 +155,7 @@ $(function(){
   console.log($Height);
 
 
-  $(window).on('load scroll resize', function(){
+  $(window).on('load scroll resize touchmove', function(){
 
     if(mediaDetect('(max-width:736px)')){
       //Do_nothing
