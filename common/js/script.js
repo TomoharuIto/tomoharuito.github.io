@@ -150,16 +150,12 @@ $(function(){
 
   var $Sticky_nav = $('#Wrapper_globalNav');
   var $Menu_top = $Sticky_nav.offset().top;
-//   var $Piece = ('<div></div>');
   var $Height = $Sticky_nav.outerHeight(true);
+
   console.log($Height);
 
-  $('#pageMain')
-    .css({
-      'padding-top':($Height)
-    });
 
-  $(window).on('load scroll resize touchmove', function(){
+  $(window).on('load scroll resize', function(){
 
     if(mediaDetect('(max-width:736px)')){
       //Do_nothing
@@ -179,6 +175,10 @@ $(function(){
             'position':'relative',
             'width':'100%',
             'margin-bottom':-($Height)
+          })
+          .parent().siblings('#pageMain')
+          .css({
+            'padding-top':($Height)
           });
       }
     }
