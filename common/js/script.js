@@ -152,7 +152,7 @@ $(function(){
   var $Menu_top = $Sticky_nav.offset().top;
   var $Height = $Sticky_nav.outerHeight(true);
 
-  console.log($Height);
+  console.log('The height of the global navigation is ' + $Height);
 
 
   $(window).on('load scroll resize touchmove', function(){
@@ -305,23 +305,14 @@ $(function(){
   var $wrapper = $('<div></div>');
   $wrapper.addClass('WrapperImg');
 
-// Test script
-  function Preload_img(path){
-    $target.attr('src', path);
-  }
-// End test script
-
   $target.wrap($wrapper)
   .on('contextmenu', function(e){
      e.preventDefault();
    })
-
-// Test script
   .each(function(){
-    var Img_data = $(this).data('behind');
-    Preload_img(Img_data);
+    var Img_data = $(this).data('img');
+    $(this).attr('src', Img_data);
   });
-// End test script
 
   if(navigator.platform.indexOf("Mac") != -1){
       console.log('Hello, Mac!');

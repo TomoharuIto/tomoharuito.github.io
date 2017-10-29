@@ -69,8 +69,8 @@ $(function(){
   }
 
   $('.Gallery')
-  .children('.PicFrames').each(function(){ // プリロードしておいた大きな画像をサムネイルのdata-imgに渡す
-    var imgPath = $(this).children('a').data('img');
+  .children('.PicFrames').each(function(){ // プリロードしておいた大きな画像をサムネイルのdata-gallery=に渡す
+    var imgPath = $(this).children('a').data('gallery');
     preloadImage(imgPath);
   })
   .on('mouseenter', '.Thumbnails', function(event){ // サムネイルをアニメーション
@@ -98,7 +98,7 @@ $(function(){
     event.preventDefault();
     var $this = $(this);
     var $window = $(window);
-    var imagePath = $this.data('img');
+    var imagePath = $this.data('gallery');
 
     $('.InModal')
     .attr('src', imagePath) //大きな画像を差し替える
@@ -175,7 +175,7 @@ $(function(){
     $current.removeClass('current');
     $new.addClass('current');
 
-    var $imgPath = $new.children('a').data('img'); // .current の data-img を取得。
+    var $imgPath = $new.children('a').data('gallery'); // .current の data-gallery= を取得。
     $Modal
     .attr('src', $imgPath) // それを大きな画像に代入。
     .stop(true).animate(
