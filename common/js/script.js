@@ -151,7 +151,7 @@ $(function(){
   var $Sticky_nav = $('#Wrapper_globalNav');
   var $Menu_top = $Sticky_nav.offset().top;
 
-  $(window).on('load scroll resize', function(){
+  $(window).on('load scroll resize touchmove', function(){
 
     if(mediaDetect('(max-width:736px)')){
       //Do_nothing
