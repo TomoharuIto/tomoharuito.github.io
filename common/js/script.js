@@ -150,8 +150,16 @@ $(function(){
 
   var $Sticky_nav = $('#Wrapper_globalNav');
   var $Menu_top = $Sticky_nav.offset().top;
+//   var $Piece = ('<div></div>');
+  var $Height = $Sticky_nav.outerHeight(true);
+  console.log($Height);
 
-  $(window).on('load scroll resize', function(){
+  $('#pageMain')
+    .css({
+      'padding-top':($Height)
+    });
+
+  $(window).on('load scroll resize touchmove', function(){
 
     if(mediaDetect('(max-width:736px)')){
       //Do_nothing
@@ -162,6 +170,7 @@ $(function(){
             'top':'0',
             'position':'fixed',
             'width':'92%',
+            'margin':'0'
           });
       } else {
         $Sticky_nav
@@ -169,6 +178,7 @@ $(function(){
             'top':'auto',
             'position':'relative',
             'width':'100%',
+            'margin-bottom':-($Height)
           });
       }
     }

@@ -30,7 +30,7 @@ body * {
   }
 
   #pageMain {
-  padding-top: 6%;
+  /* padding-top: 6%; */
 }
 
 * h1, * h2, * p, * li, * a, * time, * small, * text, #year {
@@ -217,7 +217,7 @@ p.langCode {
 
 #Wrapper_globalNav {
   z-index: 3;
-  margin-bottom: -6%;
+  /* margin-bottom: -6%; */
 }
 
 .Global_nav {
