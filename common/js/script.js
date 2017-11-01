@@ -85,7 +85,7 @@ $(function(){
 
   var $Nav = $('#Wrapper_globalNav');
   var $Menu_contents = $Nav.html();
-  console.log($Menu_contents);
+  console.log($('header').html());
   $(window).on('load', function(){
 
     function Menu_set(){
