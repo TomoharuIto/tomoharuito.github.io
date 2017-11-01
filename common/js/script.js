@@ -85,7 +85,7 @@ $(function(){
 
   var $Nav = $('#Wrapper_globalNav');
   var $Menu_contents = $Nav.html();
-
+  console.log($Menu_contents);
   $(window).on('load', function(){
 
     function Menu_set(){
@@ -152,7 +152,7 @@ $(function(){
   var $Menu_top = $Sticky_nav.offset().top;
   var $Height = $Sticky_nav.outerHeight(true);
 
-  console.log('The height of the global navigation is ' + $Height);
+//  console.log('The height of the global navigation is ' + $Height);
 
 
   $(window).on('load scroll resize touchmove', function(){
