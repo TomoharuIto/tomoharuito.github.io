@@ -89,8 +89,8 @@ $(function(){
 
     function Menu_set(){
       if(mediaDetect('(max-width:736px)')){
-        if(!($('#Wrap_menuBtn').length)){
           console.log('Say hello!');
+        if(!($('#Wrap_menuBtn').length)){
           $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div></div>');
           $('#Wrap_menuBtn').append($Menu_contents);
 
