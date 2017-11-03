@@ -87,12 +87,13 @@ $(function(){
   var $Menu_contents = $Nav.html();
   var $Max_width = 736;
 
-//   consolo.log('window.innerWidth');
+  consolo.log('window.innerWidth');
 
   $(window).on('load', function(){
 
     function Menu_set(){
       if(window.innerWidth < $Max_width){
+        console.log('Say,Hello!');
         if(!($('#Wrap_menuBtn').length)){
           $('header').append('<div id="Wrap_menuBtn"><div class="Menu_btn"><a href="#"><div id="Horizontal"></div></a></div></div>');
           $('#Wrap_menuBtn').append($Menu_contents);
