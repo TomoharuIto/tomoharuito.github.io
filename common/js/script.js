@@ -152,9 +152,6 @@ $(function(){
   var $Menu_top = $Sticky_nav.offset().top;
   var $Height = $Sticky_nav.outerHeight(true);
 
-//  console.log('The height of the global navigation is ' + $Height);
-
-
   $(window).on('load scroll resize touchmove', function(){
 
     if(mediaDetect('(max-width:736px)')){
