@@ -86,8 +86,6 @@ $(function(){
   var $Nav = $('#Wrapper_globalNav');
   var $Menu_contents = $Nav.html();
 
-  $(window).load(function(){
-
     function Menu_set(){
       if(mediaDetect('(max-width:736px)')){
         if(!($('#Wrap_menuBtn').length)){
@@ -125,13 +123,12 @@ $(function(){
       }
     }
 
-    $(window).on('resize', function(){
+    $(window).on('load resize', function(){
       Menu_set();
     });
 
     Menu_set();
 
-  });
 });
 
 // ==================================
