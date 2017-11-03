@@ -163,7 +163,7 @@ $(function(){
             'top':'0',
             'position':'fixed',
             'width':'92%',
-            'margin':'0'
+            'margin-bottom':'0'
           });
       } else {
         $Sticky_nav
@@ -172,11 +172,11 @@ $(function(){
             'position':'relative',
             'width':'100%',
             'margin-bottom':-($Height)
-          })
-          .parent().siblings('#pageMain')
-          .css({
-            'padding-top':($Height)
           });
+//           .parent().siblings('#pageMain')
+//           .css({
+//             'padding-top':($Height)
+//           });
       }
     }
   });
