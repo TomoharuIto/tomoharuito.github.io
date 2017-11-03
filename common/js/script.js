@@ -87,7 +87,7 @@ $(function(){
   var $Menu_contents = $Nav.html();
   var $Max_width = 736;
 
-  consolo.log(window.innerWidth);
+//   consolo.log('window.innerWidth');
 
   $(window).on('load', function(){
 
