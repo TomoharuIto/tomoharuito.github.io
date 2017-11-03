@@ -86,7 +86,7 @@ $(function(){
   var $Nav = $('#Wrapper_globalNav');
   var $Menu_contents = $Nav.html();
 
-  $(window).on('load resize', function(){
+  $(window).load(function(){
 
     function Menu_set(){
       if(mediaDetect('(max-width:736px)')){
@@ -125,10 +125,10 @@ $(function(){
       }
     }
 
-//     $(window).on('resize', function(){
-//       Menu_set();
-//     });
-//
+    $(window).on('resize', function(){
+      Menu_set();
+    });
+
     Menu_set();
 
   });
