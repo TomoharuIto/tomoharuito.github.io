@@ -321,18 +321,19 @@ $(function(){
 
   $body
   .on('keypress', function(e){
-    console.log('Hello,World!');
     if(navigator.platform.indexOf("Mac") != -1){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
          (e.metaKey === true && e.which === 88)){
-        e.preventDefault();
+//         e.preventDefault();
+         console.log('Hello,World!');
       }
     } else {
         if((e.ctrlKey === true && e.which === 65) ||
            (e.ctrlKey === true && e.which === 67) ||
            (e.ctrlKey === true && e.which === 88)){
-          e.preventDefault();
+//           e.preventDefault();
+           console.log('Hello,World!');
       }
     }
   })
