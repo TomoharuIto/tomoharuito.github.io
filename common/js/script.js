@@ -309,13 +309,19 @@ $(function(){
      e.preventDefault();
    });
 
-  $(window).on('load', function(){
-    $('img')
+  function Replace() {
+    $target
     .each(function(){
       var Img_data = $(this).data('img');
       $(this).attr('src', Img_data);
     });
+  }
+
+  $(window).on('load', function(){
+    Replace();
   });
+
+  Replace();
 
   if(navigator.platform.indexOf("Mac") != -1){
       console.log('Hello, Mac!');
