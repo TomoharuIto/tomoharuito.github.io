@@ -127,7 +127,7 @@ $(function(){
       Menu_set();
     });
 
-//     Menu_set();
+    Menu_set();
 
 });
 

@@ -83,7 +83,6 @@ body * {
 
  /* Caution! Due to ＃pageMain's setting, doesn't work 'position:fixed' property */
 #pageMain {
-  /* padding-top: 6%; */
   transform: scale(0.95);
   transform-origin: top;
   transform-style: preserve-3d;
@@ -337,7 +336,6 @@ width: 100%;
 }
 
 #pageMain {
-  /* padding-top: 0; */
   transform: none;
   opacity: 1;
 }
