@@ -127,7 +127,7 @@ $(function(){
       Menu_set();
     });
 
-    Menu_set();
+//     Menu_set();
 
 });
 
@@ -152,8 +152,17 @@ $(function(){
   $(window).on('load scroll resize touchmove', function(){
 
     if(mediaDetect('(max-width:736px)')){
-      //Do_nothing
+      $Sticky_nav
+      .parent().siblings('#pageMain')
+      .css({
+        'padding-top':'0'
+      });
     } else {
+      $Sticky_nav
+      .parent().siblings('#pageMain')
+      .css({
+        'padding-top':($Height)
+          });
       if($(window).scrollTop() > $Menu_top){
         $Sticky_nav
           .css({
@@ -164,16 +173,12 @@ $(function(){
           });
       } else {
         $Sticky_nav
-          .css({
-            'top':'auto',
-            'position':'relative',
-            'width':'100%',
-            'margin-bottom':-($Height)
-          });
-//           .parent().siblings('#pageMain')
-//           .css({
-//             'padding-top':($Height)
-//           });
+        .css({
+          'top':'auto',
+          'position':'relative',
+          'width':'100%',
+          'margin-bottom':-($Height)
+        });
       }
     }
   });
