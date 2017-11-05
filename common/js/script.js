@@ -325,15 +325,13 @@ $(function(){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
          (e.metaKey === true && e.which === 88)){
-//         e.preventDefault();
-         console.log('Hello,World!');
+         e.preventDefault();
       }
     } else {
         if((e.ctrlKey === true && e.which === 65) ||
            (e.ctrlKey === true && e.which === 67) ||
            (e.ctrlKey === true && e.which === 88)){
-//           e.preventDefault();
-           console.log('Hello,World!');
+           e.preventDefault();
       }
     }
   })
