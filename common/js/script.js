@@ -320,7 +320,7 @@ $(function(){
         }
 
   $body
-  .on('keypress', function(e){
+  .on('keydown', function(e){
     if(navigator.platform.indexOf("Mac") != -1){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
