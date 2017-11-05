@@ -131,14 +131,16 @@
   flex: initial;
   justify-content: space-around;
   align-items: center;
-  /* align-content: space-around; */
-  /* align-content: center; */
+  align-content: space-around;
+  align-content: center;
   margin-bottom: 20%;
 }
 
 .PicFrames  {
-  /* margin: 5vmin 0; */
+  margin: 5vmin 0;
   position: relative;
+  /* padding: 100%; */
+  box-sizing: border-box;
 }
 
 .PicFrames:first-child {
@@ -171,14 +173,12 @@
 
 
 .PicFrames:last-child {
-  flex: 0 1 50%;
+  flex: 0 1 100%;
 }
 
 .PicFrames img {
   max-width: 100%;
   height: auto;
-  -webkit-clip-path: circle(40% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
 }
 
 .caption {
@@ -215,16 +215,16 @@
 
 /* ==================== Responsive Web Design ====================> */
 
-/* ==================== When the screen size is 700px or less ====================> */
+/* ==================== When the screen size is 736px or less ====================> */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:736px) {
 
 /* ================================== */
 /* Thumbnail                          */
 /* ================================== */
 
-.PicFrames {
-  flex: 0 1 30%;
+.PicFrames img {
+  width: 30%;
 }
 
 /* ================================== */

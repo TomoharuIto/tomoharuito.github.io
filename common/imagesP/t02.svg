@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg"
-		 xmlns:xlink="http://www.w3.org/1999/xlink"
-		 width="300px" height="424px"
-		 viewBox="0 0 300 424" overflow="hidden">
-		 
-		 <rect
-		 	x="0"
-			y="0"
-			rx="2"
-			ry="2"
-			width="100%"
-			height="100%"
-			fill="#c9c9c9"
-			stroke="none" />
-			
-		<text
-			x="150"
-			y="282"
-			fill="#fff"
-			text-anchor="middle"
-			font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-			font-size="200px"
-			font-weight="lighter">
-			2
-		</text>
-			
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="300px" height="300px"
+   viewBox="0 0 300 300" overflow="hidden">
+
+  <circle
+    cx="50%"
+    cy="50%"
+    r="50%"
+    fill="#C9C9C9"
+    stroke="none" />
+
+  <text
+    x="150"
+    y="200"
+    fill="#fff"
+    text-anchor="middle"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="150px"
+    font-weight="lighter">
+    2
+  </text>
+
 </svg>
 
