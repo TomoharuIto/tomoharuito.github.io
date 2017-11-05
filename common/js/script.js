@@ -307,10 +307,14 @@ $(function(){
   $target.wrap($wrapper)
   .on('contextmenu', function(e){
      e.preventDefault();
-   })
-  .each(function(){
-    var Img_data = $(this).data('img');
-    $(this).attr('src', Img_data);
+   });
+
+  $(window).on('load', function(){
+    $('img')
+    .each(function(){
+      var Img_data = $(this).data('img');
+      $(this).attr('src', Img_data);
+    });
   });
 
   if(navigator.platform.indexOf("Mac") != -1){
@@ -325,13 +329,13 @@ $(function(){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
          (e.metaKey === true && e.which === 88)){
-         e.preventDefault();
+        e.preventDefault();
       }
     } else {
         if((e.ctrlKey === true && e.which === 65) ||
            (e.ctrlKey === true && e.which === 67) ||
            (e.ctrlKey === true && e.which === 88)){
-           e.preventDefault();
+          e.preventDefault();
       }
     }
   })
