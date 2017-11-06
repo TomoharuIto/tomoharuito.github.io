@@ -127,7 +127,7 @@
 
 .Gallery {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   flex: initial;
   justify-content: space-around;
   align-items: center;
@@ -144,7 +144,7 @@
 }
 
 .PicFrames:first-child {
-  flex: 0 1 100%;
+  flex:0 1 100%;
 }
 
 .PicFrames:nth-child(2):nth-child(3) {
