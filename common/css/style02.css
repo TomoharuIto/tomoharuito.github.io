@@ -126,14 +126,18 @@
 /* ================================== */
 
 .Gallery {
-  display: flex;
-  flex-flow: row wrap;
-  flex: initial;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  align-content: center;
-  margin-bottom: 20%;
+ /* display: flex; */
+ /* flex-flow: row wrap; */
+ /* flex: initial; */
+ /* justify-content: space-around; */
+ /* align-items: center; */
+ /* align-content: space-around; */
+ /* align-content: center; */
+ /* margin-bottom: 20%; */
+ display: grid;
+ grid-gap: 5vmin;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .PicFrames  {
