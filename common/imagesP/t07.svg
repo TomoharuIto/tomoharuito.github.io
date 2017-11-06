@@ -3,23 +3,22 @@
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="300px" height="300px"
-   viewBox="0 0 300 300" overflow="hidden">
+   viewBox="0 0 200 200" overflow="hidden">
 
   <circle
     cx="50%"
     cy="50%"
-    r="50%"
+    r="100px"
     fill="#C9C9C9"
     stroke="none" />
 
   <text
-    x="150"
-    y="200"
+    x="100"
+    y="140"
     fill="#fff"
     text-anchor="middle"
     font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-    font-size="150px"
+    font-size="100px"
     font-weight="lighter">
     7
   </text>
