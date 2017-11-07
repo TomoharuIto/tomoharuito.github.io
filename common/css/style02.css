@@ -130,6 +130,12 @@
  grid-gap: 5vmin;
  grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
  grid-template-rows: auto;
+ background-image: url(../images/tol.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ background-origin: content-box;
+ background-clip: content-box;
 }
 
 .PicFrames  {
@@ -139,15 +145,6 @@
 
 .PicFrames:first-child {
   grid-column: 3;
-}
-
-.PicFrames:first-child::before {
-  position: absolute;
-  content: "";
-  border-right: solid 5px #CCCCCC;
-  border-left: solid 5px #CCCCCC;
-  width: 100%;
-  height: 100%;
 }
 
 .PicFrames:nth-child(2) {
@@ -188,7 +185,11 @@
 
 .PicFrames:last-child {
   grid-column: 3;
-  padding: 20vmin 0;
+  padding: 5vmin 0;
+}
+
+.PicFrames:not(:first-child):not(:last-child) {
+  margin-top: -5vmin;
 }
 
 .PicFrames img {
