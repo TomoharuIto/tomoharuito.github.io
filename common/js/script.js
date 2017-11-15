@@ -2,7 +2,7 @@
 // JS for the whole Website
 // ======================================================
 $(function(){
-  $(window).on('load', function(){
+  $(window).load(function(){
     console.log('Say,hello!');
   });
 });
