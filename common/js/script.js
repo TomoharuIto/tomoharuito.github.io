@@ -2,9 +2,12 @@
 // JS for the whole Website
 // ======================================================
 
+// jQuery 3.X 'load' test
+$(function(){
   $(window).on('load', function(){
-    console.log('Say,hello!');
+    console.log('Say,hello!!');
   });
+});
 
 // ==================================
 // Drop down Menu
