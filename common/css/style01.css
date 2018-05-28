@@ -106,16 +106,14 @@
   display: flex;
   flex-flow: row nowrap;
   flex: initial;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
 }
 
 .side_by_side > .langCode {
-  flex: 0 1 70%;
+  /* flex: 0 1 70%; */
 }
 
 .Profile {
-  flex: 0 1 30%;
+  /* flex: 0 1 30%; */
   max-width: 100%;
   height: auto;
   padding:0 2vw;
@@ -201,6 +199,24 @@
 
 /* ==================== Responsive Web Design ====================> */
 
+/* ==================== When the screen size is 768px or less ====================> */
+
+@media screen and (max-width:834px) {
+
+/* ================================== */
+/* Main contents                      */
+/* ================================== */
+
+.side_by_side {
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.Profile {
+max-width: 80%;
+}
+
+}
 
 /* ==================== When the screen size is 736px or less ====================> */
 
@@ -218,14 +234,9 @@
 /* Main contents                      */
 /* ================================== */
 
-.side_by_side {
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 .Profile {
-  padding: 6vmin;
-  max-width: 80%;
+  padding: 2vmin;
+  max-width: 100%;
 }
 
 /* ================================== */
