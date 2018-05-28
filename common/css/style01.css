@@ -212,10 +212,6 @@
   align-items: center;
 }
 
-.Profile {
-max-width: 80%;
-}
-
 }
 
 /* ==================== When the screen size is 736px or less ====================> */
@@ -236,7 +232,7 @@ max-width: 80%;
 
 .Profile {
   padding: 2vmin;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 /* ================================== */

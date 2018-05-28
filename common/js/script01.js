@@ -132,16 +132,3 @@ $(function(){
 
 });
 // ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io
-
-// ==================================
-// Insert image files
-// ==================================
-/*
-$(function(){
-  $('#MainImage').find('img.MainImage').attr({
-    'src':'common/images/Main_Image906x560.png',
-    'width':'906',
-    'height':'560'
-  });
-});
-*/
