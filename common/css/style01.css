@@ -108,12 +108,7 @@
   flex: initial;
 }
 
-.side_by_side > .langCode {
-  /* flex: 0 1 70%; */
-}
-
 .Profile {
-  /* flex: 0 1 30%; */
   max-width: 100%;
   height: auto;
   padding:0 2vw;
@@ -199,7 +194,7 @@
 
 /* ==================== Responsive Web Design ====================> */
 
-/* ==================== When the screen size is 768px or less ====================> */
+/* ==================== When the screen size is 834px or less ====================> */
 
 @media screen and (max-width:834px) {
 
@@ -210,6 +205,11 @@
 .side_by_side {
   flex-flow: column nowrap;
   align-items: center;
+}
+
+.Profile {
+  padding: 2vmin;
+  max-width: 80%;
 }
 
 }
@@ -224,15 +224,6 @@
 
 #INFORMATION {
   margin-top: 0;
-}
-
-/* ================================== */
-/* Main contents                      */
-/* ================================== */
-
-.Profile {
-  padding: 2vmin;
-  max-width: 80%;
 }
 
 /* ================================== */
