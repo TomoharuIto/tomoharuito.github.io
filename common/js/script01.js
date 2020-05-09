@@ -6,7 +6,6 @@
 // Slideshow
 // ==================================
 
-/*
 $(function(){
   var intervalId;
   setTimer();
@@ -47,7 +46,6 @@ $(function(){
   });
 
 });
-*/
 
 // ==================================
 // Tab contents
